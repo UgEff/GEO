@@ -1,0 +1,10 @@
+#ignore le repertoire json
+json/
+#ignore le ficher .env
+.env
+#ignore les fichier .txt
+*.txt
+#ignore les notebooks
+*.ipynb
+#ignore les fichier .json
+*.json

@@ -11,7 +11,7 @@ class Call:
     def __init__(self,url) :
         self.url = url
 
-    
+    # methode API ECOLE
     def api_school(self):
         # Paramètres de la requête
         params = {
@@ -58,6 +58,7 @@ class Call:
 
         print(f"Total d'écoles récupérées : {len(total_results)}")
 
+    # methode API SPORT COMPLEXE
     def api_sport_complex(self):
         # URL de l'API pour les complexes sportifs
         #url = "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-data-es-base-de-donnees/records"
@@ -99,6 +100,7 @@ class Call:
 
         print(f"Total d'complexe sportif récupérées : {len(total_results)}")
 
+    # methode API LIGNES DE METRO
     def api_lines(self, transport_type=None):
         params = {
             "select": "station,trafic,reseau,ville",
@@ -140,6 +142,7 @@ class Call:
         except Exception as e:
             print(f"Erreur lors de la récupération des stations : {str(e)}")
 
+    # methode API HOPITAUX
     def api_hospitals(self):
         # Charger le fichier JSON
         with open("les_etablissements_hospitaliers_franciliens.json", "r", encoding="utf-8") as f:
@@ -160,6 +163,7 @@ class Call:
 
         print(f"Total d'hôpitaux à Paris récupérés : {len(paris_only)}")
 
+    # methode API LIGNES DE METRO
     def longlat_station(self):
         import json
         from geopy.geocoders import Nominatim
@@ -291,6 +295,47 @@ class correction_structure:
         with open(self.file_path_output, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=4, ensure_ascii=False)
 
+    def select_sport_complex(self):
+        import json
+
+        # Charger le fichier JSON
+        with open(self.file_path_input, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        # Extraire les données nécessaires
+        complex_sportif = data["results"]
+        results = []
+
+        for index, complex in enumerate(complex_sportif):
+            result = {
+                "inst_nom": complex["inst_nom"],
+                "inst_adresse": complex["inst_adresse"],
+                "inst_cp": complex["inst_cp"],
+                "equip_type_name": complex["equip_type_name"],
+                "equip_type_famille": complex["equip_type_famille"],
+                "PAYS": "FRANCE",
+                "VILLE": "PARIS",
+                "DEPARTEMENT": "ILE-DE-FRANCE",
+            }
+            # Ajouter les coordonnées
+            if complex["coordonnees"] is not None:
+                result["latitude"] = complex["coordonnees"].get("lat")
+            else:
+                result["latitude"] = None
+            if complex["coordonnees"] is not None:
+                result["longitude"] = complex["coordonnees"].get("lon")
+            else:
+                result["longitude"] = None
+
+            results.append(result)
+
+            print(f"Traitement du complexe {index + 1}/{len(complex_sportif)}")
+            
+        
+        # Sauvegarder les résultats dans un fichier JSON
+        with open(self.file_path_output, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=4, ensure_ascii=False)
+
 
 if __name__=="__main__":
     #url_transport = "https://data.ratp.fr/api/explore/v2.1/catalog/datasets/trafic-annuel-entrant-par-station-du-reseau-ferre-2021/records"
@@ -315,3 +360,6 @@ if __name__=="__main__":
     #correction_structure(file_path_input="sportcomplex.json", file_path_output="sportcomplex_prd.json").corriger_structure()
     #correction_structure(file_path_input="stations.json", file_path_output="stations_prd.json").corriger_structure()
     #correction_structure(file_path_input="stations_prd.json", file_path_output="stations_geo.json").longlat_station()
+
+    # selection des données nécessaires pour le fichier sportcomplex_prd.json
+    correction_structure(file_path_input="sportcomplex_prd.json", file_path_output="sportcomplex_prd_select.json").select_sport_complex()

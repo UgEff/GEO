@@ -1,0 +1,4 @@
+"inst_numero,inst_nom,inst_adresse,inst_cp,inst_com_codeinst_com_nom",
+"new_code,new_name,inst_actif,inst_etat,inst_date_creation,inst_date_etat",
+"inst_part_type":"["Complexe sportif"],inst_part_type_filter":["Complexe sportif"]",
+"equip_type_code,equip_type_name,equip_type_famille,coordonnees"

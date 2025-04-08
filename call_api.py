@@ -1,8 +1,11 @@
 import requests
 import json
 import time
+import os
 
-#definition de la classe : Call
+#-------------------------------------------------------------------------
+#------------------------CLASSE APPEL API-------------------------------
+#     classe qui permet d'appeler les API et de récupérer les données
 
 class Call:
     def __init__(self,url) :
@@ -157,6 +160,47 @@ class Call:
 
         print(f"Total d'hôpitaux à Paris récupérés : {len(paris_only)}")
 
+    def longlat_station(self):
+        import json
+        from geopy.geocoders import Nominatim
+        from time import sleep
+
+        # Charger les données JSON
+        with open("stations_prd.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        stations = data["results"]
+        geolocator = Nominatim(user_agent="station_locator")
+        results = []
+
+        for index, station in enumerate(stations):
+            address = f"{station['station']}, {station['ville']}, Île-de-France, France"
+            try:
+                location = geolocator.geocode(address, timeout=10)
+                if location:
+                    station["latitude"] = location.latitude
+                    station["longitude"] = location.longitude
+                else:
+                    station["latitude"] = None
+                    station["longitude"] = None
+            except Exception as e:
+                print(f"Erreur pour {address}: {e}")
+                station["latitude"] = None
+                station["longitude"] = None
+            
+            results.append(station)
+            print(f"Traitement de la station {index + 1}/{len(stations)}")  # Message de débogage
+            sleep(0.5)  # Réduire le temps d'attente
+
+        # Sauvegarder le résultat
+        with open("stations_geo.json", "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=4, ensure_ascii=False)
+
+#-------------------------------------------------------------------------
+#------------------------CLASSE LECTURE FICHIER JSON----------------------
+#  classe qui permet de lire les fichiers JSON et d'extraire que les données nécessaires
+
+
 class File_Reader:
     def __init__(self, file_path):
         self.file_path = file_path
@@ -181,6 +225,73 @@ class File_Reader:
 
         print(f"Total d'hôpitaux à Paris récupérés : {len(paris_only)}")
 
+
+#-------------------------------------------------------------------------
+#------------------------CLASSE CORRECTION STRUCTURE----------------------
+#           classe qui permet de revoir la mise en forme des jsons 
+
+class correction_structure:
+    def __init__(self, file_path_input, file_path_output):
+        self.file_path_input = file_path_input
+        self.file_path_output = file_path_output
+
+    def corriger_structure(self):
+        import json
+        import os
+
+        # Vérifier si les chemins de fichiers sont valides
+        if not os.path.exists(self.file_path_input):
+            raise FileNotFoundError(f"Le fichier {self.file_path_input} n'existe pas.")
+
+        try:
+            with open(self.file_path_input, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            with open(self.file_path_output, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=4, ensure_ascii=False)
+
+        except json.JSONDecodeError:
+            print("Erreur de décodage JSON : le fichier peut être mal formatté.")
+        except Exception as e:
+            print(f"Une erreur est survenue : {e}")
+
+    def longlat_station(self):
+        import json
+        from geopy.geocoders import Nominatim
+        from time import sleep
+
+        # Charger les données JSON
+        with open(self.file_path_input, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        stations = data["results"]
+        geolocator = Nominatim(user_agent="station_locator")
+        results = []
+
+        for index, station in enumerate(stations):
+            address = f"{station['station']}, {station['ville']}, Île-de-France, France"
+            try:
+                location = geolocator.geocode(address, timeout=10)
+                if location:
+                    station["latitude"] = location.latitude
+                    station["longitude"] = location.longitude
+                else:
+                    station["latitude"] = None
+                    station["longitude"] = None
+            except Exception as e:
+                print(f"Erreur pour {address}: {e}")
+                station["latitude"] = None
+                station["longitude"] = None
+            
+            results.append(station)
+            print(f"Traitement de la station {index + 1}/{len(stations)}")  # Message de débogage
+            sleep(0.5)  # Réduire le temps d'attente
+
+        # Sauvegarder le résultat
+        with open(self.file_path_output, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=4, ensure_ascii=False)
+
+
 if __name__=="__main__":
     #url_transport = "https://data.ratp.fr/api/explore/v2.1/catalog/datasets/trafic-annuel-entrant-par-station-du-reseau-ferre-2021/records"
     
@@ -190,10 +301,17 @@ if __name__=="__main__":
     #api.api_lines()
     
     # Chemin vers le fichier JSON contenant les établissements hospitaliers
-    file_path = "les_etablissements_hospitaliers_franciliens.json"
+    #file_path = "les_etablissements_hospitaliers_franciliens.json"
     
     # Créer une instance de la classe HospitalData
-    hospital_data = File_Reader(file_path)
+    #hospital_data = File_Reader(file_path)
     
     # Récupérer les hôpitaux à Paris
-    hospital_data.api_hospitals()
+    #hospital_data.api_hospitals()
+
+    # corriger la structure du fichier JSON
+    #correction_structure(file_path_input="school.json", file_path_output="school_prd.json").corriger_structure()
+    #correction_structure(file_path_input="hospitals_paris.json", file_path_output="hospitals_paris_prd.json").corriger_structure()
+    #correction_structure(file_path_input="sportcomplex.json", file_path_output="sportcomplex_prd.json").corriger_structure()
+    #correction_structure(file_path_input="stations.json", file_path_output="stations_prd.json").corriger_structure()
+    #correction_structure(file_path_input="stations_prd.json", file_path_output="stations_geo.json").longlat_station()

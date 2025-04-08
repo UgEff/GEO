@@ -1,0 +1,4 @@
+RATP : https://data.iledefrance-mobilites.fr/api/records/1.0/search/?dataset=referentiel-des-lignes&refine.mode=Metro&refine.operatorname=RATP&rows=100
+HOPITAUX: https://www.data.gouv.fr/fr/datasets/les-etablissements-hospitaliers-franciliens-idf/
+ECOLE : https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-annuaire-education/records
+SPORT COMPLEXE : https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-data-es-base-de-donnees/records

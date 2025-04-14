@@ -234,7 +234,7 @@ class File_Reader:
 #------------------------CLASSE CORRECTION STRUCTURE----------------------
 #           classe qui permet de revoir la mise en forme des jsons 
 
-class correction_structure:
+class Correction_Structure:
     def __init__(self, file_path_input, file_path_output):
         self.file_path_input = file_path_input
         self.file_path_output = file_path_output

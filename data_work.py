@@ -10,6 +10,7 @@ class DataWork:
             data = json.load(f)
         return data
     
+
     def converte_to_df(self):
         data = self.read_json()
         df = pd.DataFrame(data)
@@ -21,6 +22,7 @@ class DataWork:
 
 if __name__ == "__main__":
     file_path = "json_prd/sportcomplex_prd.json"
+    data_work = DataWork(file_path)
     
 
 

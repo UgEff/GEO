@@ -2,6 +2,7 @@ import requests
 import json
 import time
 import os
+from geopy.geocoders import Nominatim
 
 #-------------------------------------------------------------------------
 #------------------------CLASSE APPEL API-------------------------------
@@ -165,7 +166,6 @@ class Call:
 
     # methode API LIGNES DE METRO
     def longlat_station(self):
-        import json
         from geopy.geocoders import Nominatim
         from time import sleep
 
@@ -315,7 +315,7 @@ class correction_structure:
                 "equip_type_famille": complex["equip_type_famille"],
                 "PAYS": "FRANCE",
                 "VILLE": "PARIS",
-                "DEPARTEMENT": "ILE-DE-FRANCE",
+                "DEPARTEMENT": "PARIS",
             }
             # Ajouter les coordonnées
             if complex["coordonnees"] is not None:
@@ -336,6 +336,106 @@ class correction_structure:
         with open(self.file_path_output, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=4, ensure_ascii=False)
 
+    def select_school(self):
+        import json
+
+        # Charger le fichier JSON
+        with open(self.file_path_input, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        # Extraire les données nécessaires
+        etablissements = data["results"]
+        results = []
+
+        for index, etablissement in enumerate(etablissements):
+            result = {
+                "nom_etablissement": etablissement["nom_etablissement"],
+                "type_etablissement": etablissement["type_etablissement"],
+                "statut_public_prive": etablissement["statut_public_prive"],
+                "adresse_1": etablissement["adresse_1"],
+                "code_postal": etablissement["code_postal"],
+                "VILEE": etablissement["nom_commune"],
+                "DEPARTEMENT":"PARIS",
+                "PAYS":"FRANCE",
+            }
+
+            if etablissement["position"] is not None:
+                result["longitude"] = etablissement["position"].get("lat")
+            else:
+                result["longitude"] = None
+            if etablissement["position"] is not None:
+                result["latitude"] = etablissement["position"].get("lon")
+            else:
+                result["latitude"] = None
+
+            results.append(result)
+
+            print(f"Traitement de l'établissement {index + 1}/{len(etablissements)}")
+
+        # Sauvegarder les résultats dans un fichier JSON    
+        with open(self.file_path_output, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=4, ensure_ascii=False)
+
+    def select_hospitals(self):
+        # Initialiser le géocodeur
+        geolocator = Nominatim(user_agent="hospital_locator")
+
+        # Charger le fichier JSON
+        with open(self.file_path_input, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        # Extraire les données nécessaires
+        etablissements = data.get("results", [])
+        results = []
+
+        if not etablissements:
+            print("Aucun établissement trouvé dans le fichier JSON.")
+            return  # Sortir de la méthode si aucun établissement n'est trouvé
+
+        for index, etablissement in enumerate(etablissements):
+            fields = etablissement.get("fields", {})
+            adresse_complete = fields.get("adresse_complete", "")
+            
+            # Utiliser geopy pour obtenir la latitude et la longitude
+            try:
+                location = geolocator.geocode(adresse_complete, timeout=10)  # Augmenter le délai d'attente
+                if location:
+                    longitude = location.longitude
+                    latitude = location.latitude
+                else:
+                    longitude = None
+                    latitude = None
+            except Exception as e:
+                print(f"Erreur lors du géocodage de l'adresse '{adresse_complete}': {e}")
+                longitude = None
+                latitude = None
+
+            result = {
+                "type_etablissement": fields.get("categorie_de_l_etablissement", "Inconnu"),
+                "nom_etablissement": fields.get("raison_sociale_entite_juridique", "Inconnu"),
+                "PAYS": "FRANCE",
+                "VILLE": fields.get("cp_ville", "").split()[1] if len(fields.get("cp_ville", "").split()) > 1 else "Inconnue",
+                "DEPARTEMENT": fields.get("dept", "Inconnu"),
+                "adresse_1": adresse_complete,
+                "code_postal": fields.get("cp_ville", "").split()[0],  # Extraire le code postal
+                "longitude": longitude,
+                "latitude": latitude,
+            }
+
+            if result["DEPARTEMENT"] == "PARIS":
+                results.append(result)
+
+            print(f"Traitement de l'établissement {index + 1}/{len(etablissements)}")
+            
+            # Ajouter un délai entre les requêtes pour éviter d'être bloqué
+            time.sleep(1)  # Délai d'une seconde
+
+        # Sauvegarder les résultats dans un fichier JSON    
+        with open(self.file_path_output, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=4, ensure_ascii=False)
+        
+                
+    
 
 if __name__=="__main__":
     #url_transport = "https://data.ratp.fr/api/explore/v2.1/catalog/datasets/trafic-annuel-entrant-par-station-du-reseau-ferre-2021/records"
@@ -362,4 +462,8 @@ if __name__=="__main__":
     #correction_structure(file_path_input="stations_prd.json", file_path_output="stations_geo.json").longlat_station()
 
     # selection des données nécessaires pour le fichier sportcomplex_prd.json
-    correction_structure(file_path_input="sportcomplex_prd.json", file_path_output="sportcomplex_prd_select.json").select_sport_complex()
+    #correction_structure(file_path_input="sportcomplex_prd.json", file_path_output="sportcomplex_prd_select.json").select_sport_complex()
+
+    # selection des données nécessaires pour le fichier school_prd.json
+    #correction_structure(file_path_input="school_prd.json", file_path_output="school_prd_select.json").select_school()
+    correction_structure(file_path_input="json_prd/hospitals_paris_prd.json", file_path_output="json_prd/hospitals_paris_prd_select.json").select_hospitals()

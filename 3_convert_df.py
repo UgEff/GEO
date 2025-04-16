@@ -21,11 +21,6 @@ class DataWork:
         df.to_excel(file_path, index=False)
     
 
-if __name__ == "__main__":
-    file_path = "json_prd/hospitals_paris_prd_select.json"
-    data_work = DataWork(file_path)
-    df = data_work.converte_to_df()
-    print(df.head())
 
 
 

@@ -78,8 +78,5 @@ Structure standardisée pour chaque établissement :
 - [ ] Tests unitaires
 
 ## Auteur
-[Votre nom]
-
-## Licence
-[Type de licence]
+Idir GUETTAB
 

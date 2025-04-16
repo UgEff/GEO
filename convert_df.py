@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 
 
 class DataWork:
@@ -8,7 +9,7 @@ class DataWork:
     def read_json(self):
         with open(self.file_path, "r") as f:
             data = json.load(f)
-        return data
+        return data 
     
 
     def converte_to_df(self):
@@ -21,9 +22,10 @@ class DataWork:
     
 
 if __name__ == "__main__":
-    file_path = "json_prd/sportcomplex_prd.json"
+    file_path = "json_prd/hospitals_paris_prd_select.json"
     data_work = DataWork(file_path)
-    
+    df = data_work.converte_to_df()
+    print(df.head())
 
 
 

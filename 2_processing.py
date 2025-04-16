@@ -2,7 +2,11 @@
 #------------------------CLASSE CORRECTION STRUCTURE----------------------
 #           classe qui permet de revoir la mise en forme des jsons 
 
+from 1_call_api import *
+
 class Correction_Structure:
+    
+
     def __init__(self, file_path_input, file_path_output):
         self.file_path_input = file_path_input
         self.file_path_output = file_path_output

@@ -5,30 +5,44 @@ import pandas as pd
 import json
 from dotenv import load_dotenv
 
-# Charger les variables d'environnement à partir du fichier .env
 load_dotenv()
 
 
 class DataWork:
     def __init__(self):
-        pass
+        # Définition des sources
+        self.sources = {
+            'ecole': 'API Education Nationale',
+            'sport': 'API Equipements Sportifs',
+            'metro': 'API OpenStreetMap',
+            'hopital': 'Fichier Local Data gouv'
+        }
     
+    def convert_to_df(self, data):
+        try:
+            df = pd.DataFrame(data)
+            return df
+        except Exception as e:
+            print(f"Erreur lors de la conversion en DataFrame : {str(e)}")
+            return None
 
-    def converte_to_df(self):
-        data = self.read_json()
-        df = pd.DataFrame(data)
-        return df
-    
+    def add_lineage(self, df, type_donnee, date_extraction=None):
+        try:
+            # Ajout de la source
+            df['source'] = self.sources.get(type_donnee, 'Source inconnue')
+            
+            # Ajout de la date d'extraction
+            if date_extraction:
+                df['date_extraction'] = date_extraction
+            else:
+                from datetime import datetime
+                df['date_extraction'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            
+            return df
+            
+        except Exception as e:
+            print(f"Erreur lors de l'ajout des champs de lignage : {str(e)}")
+            return df
 
 
 if __name__ == "__main__":
-    api_school = Call(os.getenv("ECOLE_API"))
-    result_school = api_school.api_school()
-    print(result_school)
-
-    with open("school_control_0.json", "w", encoding="utf-8") as f:
-        json.dump(result_school, f, indent=4, ensure_ascii=False)
-    
-    correction_structure = Correction_Structure()
-    result_school_control = correction_structure.corriger_structure_ecole(result_school)
-    print(result_school_control)

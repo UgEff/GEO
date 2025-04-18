@@ -9,23 +9,33 @@ if __name__ == "__main__":
 
 
 # ecole
+# Exemple d'utilisation
     api_school = Call(os.getenv("ECOLE_API"))
     result_school = api_school.api_school()
-    print(result_school)
-
-    with open("school_control_0.json", "w", encoding="utf-8") as f:
-        json.dump(result_school, f, indent=4, ensure_ascii=False)
     
     correction_structure = Correction_Structure()
-    result_school_control = correction_structure.corriger_structure_ecole(result_school)
-    print(result_school_control)
+    result_school_processed = correction_structure.corriger_structure_ecole(result_school)
+    
+    # Conversion en DataFrame et ajout du lignage
+    data_worker = DataWork()
+    df = data_worker.convert_to_df(result_school_processed)
+    
+    if df is not None:
+        # Ajout des informations de lignage
+        df_with_lineage = data_worker.add_lineage(df, 'ecole')
+        
+        print("Aperçu du DataFrame avec lignage :")
+        print(df_with_lineage.head())
+        
+        # Afficher les colonnes pour vérifier les nouveaux champs
+        print("\nColonnes du DataFrame :")
+        print(df_with_lineage.columns.tolist())
 
-    with open("school_control_1.json", "w", encoding="utf-8") as f:
-        json.dump(result_school_control, f, indent=4, ensure_ascii=False)
+        # Sauvegarder le DataFrame en xlsx
+        df_with_lineage.to_excel('ecoles_data.xlsx', index=False)
 
 # complexe sportif
-        
-# Création des instances pour les complexes sportifs
+   # Création des instances pour les complexes sportifs
     api_sport_complex = Call(os.getenv("SPORT_COMPLEXE_API"))
     result_sport_complex = api_sport_complex.api_sport_complex()
     
@@ -34,6 +44,25 @@ if __name__ == "__main__":
     
     # Correction et formatage des données des complexes sportifs
     complexes_formated = correction.corriger_structure_sport(result_sport_complex)
+
+    # Conversion en DataFrame
+    data_worker = DataWork()
+    df = data_worker.convert_to_df(complexes_formated)
+    
+    if df is not None:
+        # Ajout des informations de lignage 
+        df_with_lineage = data_worker.add_lineage(df, 'sport')
+        
+        print("Aperçu du DataFrame avec lignage :")
+        print(df_with_lineage.head())
+        
+        # Afficher les colonnes pour vérifier les nouveaux champs   
+        print("\nColonnes du DataFrame :")
+        print(df_with_lineage.columns.tolist())
+
+        # Sauvegarder le DataFrame en xlsx
+        df_with_lineage.to_excel('complexes_sportifs_data.xlsx', index=False)     
+
     
 
 # hopital

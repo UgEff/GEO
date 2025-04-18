@@ -13,9 +13,7 @@ class Correction_Structure:
         pass
 
     def corriger_structure_metro(self, result_metro):
-        """
-        Corrige et filtre les données des stations de métro
-        """
+
         results = []
         
         for station in result_metro:
@@ -38,9 +36,7 @@ class Correction_Structure:
         return results
 
     def corriger_structure_ecole(self, result_school):
-        """
-        Corrige et filtre les données des écoles
-        """
+
         results = []
         
         for ecole in result_school:
@@ -72,9 +68,7 @@ class Correction_Structure:
         return results
 
     def corriger_structure_sport(self, result_sport):
-        """
-        Corrige et filtre les données des complexes sportifs
-        """
+
         results = []
         
         for complexe in result_sport:
@@ -106,11 +100,6 @@ class Correction_Structure:
         return results
     
     def select_sport_complex(self, result_complex):
-        """
-        Traite les données des complexes sportifs
-        Args:
-            result_complex: Les données des complexes sportifs à traiter
-        """
         results = []
 
         for index, complex in enumerate(result_complex):
@@ -140,9 +129,6 @@ class Correction_Structure:
         return results
 
     def corriger_structure_hopital(self, result_hopital):
-        """
-        Corrige et filtre les données des hôpitaux
-        """
         results = []
         
         for hopital in result_hopital:
@@ -163,9 +149,5 @@ class Correction_Structure:
         return results
     
 
-if __name__ == "__main__":
-    # metro
-    api_metro = Call("http://overpass-api.de/api/interpreter")
-    result_metro = api_metro.api_lines()
-    print(result_metro)
+
 

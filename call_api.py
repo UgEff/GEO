@@ -117,15 +117,6 @@ class Call:
 
     # methode API LIGNES DE METRO /!\ a verifier 
     def api_lines(self, transport_type=None):
-        """
-        Récupère les stations de métro à Paris en utilisant Overpass API.
-        
-        Args:
-            transport_type (str, optional): Type de transport (par défaut None, mais utilisé uniquement pour la compatibilité)
-        
-        Returns:
-            list: Liste des stations avec leurs coordonnées
-        """
         try:
             # Configuration de la requête Overpass
             overpass_url = "http://overpass-api.de/api/interpreter"

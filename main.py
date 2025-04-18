@@ -51,3 +51,8 @@ if __name__ == "__main__":
 
     with open("hopital_control_1.json", "w", encoding="utf-8") as f:
         json.dump(result_hopital_control, f, indent=4, ensure_ascii=False)
+
+    # metro
+    api_metro = Call("http://overpass-api.de/api/interpreter")
+    result_metro = api_metro.api_lines()
+    print(result_metro)

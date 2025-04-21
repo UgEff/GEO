@@ -1,6 +1,6 @@
 import os
-from call_api import Call
-from processing import Correction_Structure
+from call_api import *
+from processing import *
 import pandas as pd
 import json
 from dotenv import load_dotenv
@@ -43,6 +43,3 @@ class DataWork:
         except Exception as e:
             print(f"Erreur lors de l'ajout des champs de lignage : {str(e)}")
             return df
-
-
-if __name__ == "__main__":

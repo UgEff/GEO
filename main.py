@@ -35,7 +35,7 @@ if __name__ == "__main__":
         df_with_lineage.to_excel('ecoles_data.xlsx', index=False)
 
 # complexe sportif
-   # Création des instances pour les complexes sportifs
+# Création des instances pour les complexes sportifs
     api_sport_complex = Call(os.getenv("SPORT_COMPLEXE_API"))
     result_sport_complex = api_sport_complex.api_sport_complex()
     
@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
     
 
-# hopital
+    # hopital
     file_reader = File_Reader()
     result_hopital = file_reader.select_hospitals("json/hospitals_paris.json")
     print(result_hopital)
@@ -81,7 +81,25 @@ if __name__ == "__main__":
     with open("hopital_control_1.json", "w", encoding="utf-8") as f:
         json.dump(result_hopital_control, f, indent=4, ensure_ascii=False)
 
-    # metro
+    datawork=DataWork()
+    result_hopital_df=datawork.convert_to_df(result_hopital_control)
+    if result_hopital_df is not None:
+        df_with_lineage = datawork.add_lineage(result_hopital_df,'hopital')
+        df_with_lineage.to_excel('test_hopital.xlsx',index=False)
+
+    #Metro
+    # Création des instances
     api_metro = Call("http://overpass-api.de/api/interpreter")
+    correction_structure = Correction_Structure()
+    data_worker = DataWork()
+
+    # Récupération et traitement des données métro
     result_metro = api_metro.api_lines()
-    print(result_metro)
+    result_metro_correction = correction_structure.corriger_structure_metro(result_metro)
+    
+    # Conversion en DataFrame et ajout du lignage
+    df_metro = data_worker.convert_to_df(result_metro_correction)
+    if df_metro is not None:
+        df_with_lineage = data_worker.add_lineage(df_metro, 'metro')
+        # Sauvegarder le DataFrame en xlsx avec l'extension
+        df_with_lineage.to_excel('test_metro_1.xlsx', index=False)  

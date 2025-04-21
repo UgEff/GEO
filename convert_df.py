@@ -1,12 +1,5 @@
-import os
-from call_api import *
-from processing import *
 import pandas as pd
-import json
-from dotenv import load_dotenv
-
-load_dotenv()
-
+from datetime import datetime
 
 class DataWork:
     def __init__(self):
@@ -35,7 +28,6 @@ class DataWork:
             if date_extraction:
                 df['date_extraction'] = date_extraction
             else:
-                from datetime import datetime
                 df['date_extraction'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             
             return df

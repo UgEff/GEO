@@ -1,9 +1,10 @@
-import requests
 import json
-import time
 import os
-from geopy.geocoders import Nominatim
+import time
+
+import requests
 from dotenv import load_dotenv
+from geopy.geocoders import Nominatim
 
 # Charger les variables d'environnement à partir du fichier .env
 load_dotenv()

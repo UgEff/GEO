@@ -15,4 +15,4 @@ RUN pip install requests python-dotenv geopy pandas psycopg2-binary
 COPY . /app
 
 # Run the script
-CMD ["run", "python", "app/main.py"] 
+CMD ["python", "app/main.py"] 

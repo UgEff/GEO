@@ -144,6 +144,24 @@ class Correction_Structure:
                 "longitude": hopital.get('longitude')
             }
             results.append(result)
+
+        for result in results:
+            if result.get('adresse'):
+                result['adresse'] = result['adresse'].replace(" R ", " RUE ")
+            if result.get('adresse'):
+                result['adresse'] = result['adresse'].replace(" AV ", " AVENUE ")
+            if result.get('adresse'):
+                result['adresse'] = result['adresse'].replace(" BD ", " BOULEVARD ")
+            if result.get('adresse'):
+                result['adresse'] = result['adresse'].replace(" SQ ", " SQUARE ")
+            if result.get('adresse'):
+                result['adresse'] = result['adresse'].replace(" PL ", " PLACE ")
+            if result.get('adresse'):
+                result['adresse'] = result['adresse'].replace(" BLD ", " BOULEVARD ")
+            if result.get('adresse'):
+                result['adresse'] = result['adresse'].replace(" FBG ", " FAUBOURG ")
+            if result.get('adresse'):
+                result['adresse'] = result['adresse'].replace(" RTE ", " ROUTE ")
         
         print(f"Nombre d'hôpitaux traités : {len(results)}")
         return results

@@ -270,29 +270,3 @@ class File_Reader:
             time.sleep(1)  # Délai d'une seconde
 
         return results
-
-
-if __name__ == "__main__":
-    #lancement des methodes
-    # metro
-    api_metro = Call("http://overpass-api.de/api/interpreter")
-    result_metro = api_metro.api_lines()
-    print(result_metro)
-
-    # ecole
-    api_school = Call(os.getenv("ECOLE_API"))
-    result_school = api_school.api_school()
-    print(result_school)
-
-    # sport complex
-    api_sport_complex = Call(os.getenv("SPORT_COMPLEXE_API"))
-    result_sport_complex = api_sport_complex.api_sport_complex()
-    print(result_sport_complex)
-
-    # hopital
-    file_reader = File_Reader()
-    result_hopital = file_reader.select_hospitals("json/hospitals_paris.json")
-    print(result_hopital)
-
-
-    

@@ -9,3 +9,8 @@
 #ignore le repertoires _pycache_
 app/__pycache__/
 
+# ignore Python cache et fichiers compilés
+__pycache__/
+**/__pycache__/
+*.py[cod]
+

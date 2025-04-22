@@ -6,3 +6,6 @@
 *.xlsx
 *.xls
 *.csv
+#ignore le repertoires _pycache_
+__pycache__/
+

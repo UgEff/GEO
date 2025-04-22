@@ -1,13 +1,7 @@
-#ignore le repertoire json
-json/
-CSV_test/
-json_prd/
 #ignore le ficher .env
 .env
 #ignore les notebooks
 *.ipynb
-#ignore les fichier .json
-*.json
 #ignore les fichier .xlsx
 *.xlsx
 *.xls

@@ -1,108 +1,114 @@
 # Projet Geotier
 
-## Sources de Données
+[![Python](https://img.shields.io/badge/python-3.10-blue)](#)
+[![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)](#)
 
-### API Publiques
-- **Éducation**
-  - ✅ API des établissements scolaires
-  - Source : data.education.gouv.fr
-  - Données : écoles, collèges, lycées parisiens
+## Aperçu
 
-- **Sport**
-  - ✅ API des équipements sportifs
-  - Source : data.education.gouv.fr
-  - Données : complexes sportifs, gymnases, piscines
+**Projet Geotier** est un service containerisé qui collecte, normalise et stocke des données géolocalisées pour la ville de Paris :
+- **Écoles** (API Éducation nationale)
+- **Complexes sportifs** (API Data.gouv.fr)
+- **Stations de métro** (Overpass API / OpenStreetMap)
+- **Hôpitaux** (fichier JSON Data.gouv.fr)
 
-### API OpenStreetMap
-- **Transport**
-  - ✅ Overpass API
-  - Source : openstreetmap.org
-  - Données : stations de métro parisiennes
+Les données sont converties en DataFrame, enrichies (source, date d'extraction) puis insérées dans une base PostgreSQL.
 
-### Fichiers Locaux
-- **Santé**
-  - ✅ Fichier JSON des établissements de santé
-  - Source : fichier local data.gouv.fr
-  - Données : hôpitaux parisiens
+## Architecture
 
-## Structure du Projet
-
-### 1. Collecte des Données (`call_api.py`)
-- ✅ Classe `Call`
-  - `api_school()` : Récupération données écoles
-  - `api_sport_complex()` : Récupération données sportives
-  - `api_lines()` : Récupération stations métro
-  - `api_hospitals()` : Lecture données hôpitaux
-
-- ✅ Classe `File_Reader`
-  - `select_hospitals()` : Traitement fichiers JSON
-  - Géocodage des adresses
-
-### 2. Traitement des Données (`processing.py`)
-- ✅ Classe `Correction_Structure`
-  - `corriger_structure_metro()` : Formatage données métro
-  - `corriger_structure_ecole()` : Formatage données écoles
-  - `corriger_structure_sport()` : Formatage données sportives
-  - `corriger_structure_hopital()` : Formatage données hôpitaux
-
-### 3. Conversion et Enrichissement (`3_convert_df.py`)
-- ✅ Classe `DataWork`
-  - `convert_to_df()` : Conversion en DataFrame
-  - `add_lineage()` : Ajout informations de traçabilité
-    - Source des données
-    - Date d'extraction
-
-## Format des Données Standardisé
-Structure commune pour chaque établissement :
-```json
-{
-    "nom_etablissement": "...",
-    "adresse": "...",
-    "code_postal": "75...",
-    "latitude": 48.8...,
-    "longitude": 2.3...,
-    "VILLE": "PARIS",
-    "DEPARTEMENT": "PARIS",
-    "PAYS": "FRANCE",
-    "source": "...",
-    "date_extraction": "YYYY-MM-DD HH:MM:SS"
-}
+```plaintext
+┌───────────┐    API    ┌───────────┐    DF    ┌───────┐
+│ call_api  │ ───────▶ │ correction│ ───────▶ │ Data  │
+│ (Collecte)│         │ (Traitement)│         │ Work  │
+└───────────┘          └───────────┘         │ (Conversion,
+                                              │  lignage)│
+                                              └───────┘
+                                                  │
+                                                  ▼
+                                              ┌────────┐
+                                              │  Bdd   │
+                                              │(Postgre│
+                                              │SQL insert)
+                                              └────────┘
 ```
 
-## Configuration Requise
-- Python 3.x
-- Fichier `.env` avec URLs des API :
-  - ECOLE_API
-  - SPORT_COMPLEXE_API
-  - HOPITAUX_API
-  - RATP_API
+## Prérequis
 
-## Dépendances
-- requests
-- pandas
-- json
-- geopy
-- python-dotenv
+- Docker (optionnel pour la containerisation)
+- Python 3.10+
+- Base de données PostgreSQL (accessible via variables d'environnement)
 
-## Installation et Utilisation
-1. Cloner le repository
-2. Installer les dépendances : `pip install -r requirements.txt`
-3. Configurer le fichier `.env` avec les URLs des API
-4. Exécution :
-   ```bash
-   python call_api.py      # Collecte des données
-   python processing.py    # Traitement des données
-   python 3_convert_df.py  # Conversion en DataFrame et enrichissement
-   ```
+## Configuration
 
-## Prochaines Étapes
-- [ ] Visualisation cartographique
-- [ ] Connexion a BDD
-- [ ] Optimisation performances
+À la racine du projet, créez un fichier `.env` :
 
+```dotenv
+# URLs des APIs
+ECOLE_API=https://data.education.gouv.fr/api/...
+SPORT_COMPLEXE_API=https://data.education.gouv.fr/api/...
+HOPITAUX_API=<chemin_vers_fichier_JSON>
+RATP_API=http://overpass-api.de/api/interpreter
 
-## Auteur
-Idir GUETTAB
+# PostgreSQL
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=geotier_db
+DB_USER=utilisateur
+DB_PASSWORD=mot_de_passe
+```
+
+## Installation
+
+### Avec Docker
+
+```bash
+docker build -t projet_geotier .
+docker run --env-file .env projet_geotier
+```
+
+### En local
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+python app/main.py
+```
+
+## Utilisation
+
+Le script principal `app/main.py` exécute automatiquement toutes les étapes :
+1. Collecte des données (call_api)
+2. Traitement et formatage (processing)
+3. Conversion en DataFrame et enrichissement (convert_df)
+4. Insertion dans PostgreSQL (bdd)
+
+## Développement
+
+Pour lancer individuellement chaque module :
+
+```bash
+# Collecte
+python -m app.call_api
+# Traitement
+python -m app.processing
+# Conversion
+python -m app.convert_df
+# Exécution complète
+python app/main.py
+```
+
+## Déploiement
+
+- Construction et push du conteneur Docker sur un registry privé ou Docker Hub.
+
+```bash
+docker build -t monregistry/projet_geotier:latest .
+docker push monregistry/projet_geotier:latest
+```
+
+## Auteurs
+
+- Idir GUETTAB
+
 
 
 

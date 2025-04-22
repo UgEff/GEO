@@ -64,7 +64,7 @@ class Call:
             offset += 100  # Incrémenter l'offset de 100
 
         # Enregistrer tous les résultats dans un fichier après la boucle
-        with open('json/school.json', 'w') as f:
+        with open('json_prd/school.json', 'w') as f:
             json.dump({"total_count": len(total_results), "results": total_results}, f)
 
         print(f"Total d'écoles récupérées : {len(total_results)}")
@@ -109,8 +109,8 @@ class Call:
 
         # Enregistrer tous les résultats dans un fichier JSON avec un encodage UTF-8
         # Cela permet de s'assurer que les caractères spéciaux sont correctement gérés
-        #with open('sportcomplex.json', 'w', encoding='utf-8') as f:
-            #json.dump({"total_count": len(total_results), "results": total_results}, f, ensure_ascii=False, indent=2)
+        with open('json_prd/sportcomplex.json', 'w', encoding='utf-8') as f:
+            json.dump({"total_count": len(total_results), "results": total_results}, f, ensure_ascii=False, indent=2)
 
         print(f"Total de complexes sportifs récupérés : {len(total_results)}")
 
@@ -154,6 +154,9 @@ class Call:
                             }
                             stations.append(station)
 
+                    with open('json_prd/metro.json', 'w') as f:
+                        json.dump({"total_count": len(total_results), "results": total_results}, f)
+
                     print(f"Nombre total de stations trouvées : {len(stations)}")
                     return stations
                 else:
@@ -173,8 +176,7 @@ class Call:
         except Exception as e:
             print(f"Erreur inattendue : {str(e)}")
 
-            with open('json/metro.json', 'w') as f:
-                json.dump({"total_count": len(total_results), "results": total_results}, f)
+
             return []
 
     # methode API HOPITAUX
@@ -298,7 +300,7 @@ class File_Reader:
             # Ajouter un délai entre les requêtes pour éviter d'être bloqué
             time.sleep(1)  # Délai d'une seconde
 
-        with open('json/hospitals_paris.json', 'w', encoding='utf-8') as f:
+        with open('json_prd/hospitals_paris.json', 'w', encoding='utf-8') as f:
             json.dump({"total_count": len(results), "results": results}, f, ensure_ascii=False, indent=2)
 
         return results

@@ -64,8 +64,8 @@ class Call:
             offset += 100  # Incrémenter l'offset de 100
 
         # Enregistrer tous les résultats dans un fichier après la boucle
-        #with open('school.json', 'w') as f:
-            #json.dump({"total_count": len(total_results), "results": total_results}, f)
+        with open('json/school.json', 'w') as f:
+            json.dump({"total_count": len(total_results), "results": total_results}, f)
 
         print(f"Total d'écoles récupérées : {len(total_results)}")
 
@@ -172,6 +172,9 @@ class Call:
             return []
         except Exception as e:
             print(f"Erreur inattendue : {str(e)}")
+
+            with open('json/metro.json', 'w') as f:
+                json.dump({"total_count": len(total_results), "results": total_results}, f)
             return []
 
     # methode API HOPITAUX
@@ -192,7 +195,7 @@ class Call:
         ]
 
         # Sauvegarder les résultats dans un fichier JSON
-        with open('hospitals_paris.json', 'w', encoding='utf-8') as f:
+        with open('json/hospitals_paris.json', 'w', encoding='utf-8') as f:
             json.dump({
                 "total_count": len(paris_only),
                 "results": paris_only
@@ -234,7 +237,33 @@ class File_Reader:
         for index, etablissement in enumerate(etablissements):
             fields = etablissement.get("fields", {})
             adresse_complete = fields.get("adresse_complete", "")
+
+            # Remplacer les " R " par " RUE "
+            adresse_complete = adresse_complete.replace(" R ", " RUE ")
+            # Remplacer les " AV " par " AVENUE "
+            adresse_complete = adresse_complete.replace(" AV ", " AVENUE ")
+            # Remplacer les " BD " par " BOULEVARD "
+            adresse_complete = adresse_complete.replace(" BD ", " BOULEVARD ")
+            # Remplacer les " SQ " par " SQUARE "
+            adresse_complete = adresse_complete.replace(" SQ ", " SQUARE ")
+            # Remplacer les " PL " par " PLACE "
+            adresse_complete = adresse_complete.replace(" PL ", " PLACE ")
+            # Remplacer les " BLD " par " BOULEVARD "
+            adresse_complete = adresse_complete.replace(" BLD ", " BOULEVARD ")
+            # Remplacer les " FBG " par " FAUBOURG "
+            adresse_complete = adresse_complete.replace(" FBG ", " FAUBOURG ")
+            # Remplacer les " RTE " par " ROUTE "
+            adresse_complete = adresse_complete.replace(" RTE ", " ROUTE ")
+            # Remplacer les " QU " par " QUAI "
+            adresse_complete = adresse_complete.replace(" QU ", " QUAI ")
+            # Remplacer les " QUA " par " QUAI "
+            adresse_complete = adresse_complete.replace(" QUA ", " QUAI ")
+            # Remplacer les " VLA " par " VILLAGE "
+            adresse_complete = adresse_complete.replace(" VLA ", " VILLAGE ")
+            # Remplacer les " IMP " par " IMPASSE "
+            adresse_complete = adresse_complete.replace(" IMP ", " IMPASSE ")
             
+
             # Utiliser geopy pour obtenir la latitude et la longitude
             try:
                 location = geolocator.geocode(adresse_complete, timeout=10)  # Augmenter le délai d'attente
@@ -268,5 +297,8 @@ class File_Reader:
             
             # Ajouter un délai entre les requêtes pour éviter d'être bloqué
             time.sleep(1)  # Délai d'une seconde
+
+        with open('json/hospitals_paris.json', 'w', encoding='utf-8') as f:
+            json.dump({"total_count": len(results), "results": results}, f, ensure_ascii=False, indent=2)
 
         return results

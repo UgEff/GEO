@@ -12,11 +12,19 @@ class Bdd:
             database=os.getenv("DB_NAME"),
             user=os.getenv("DB_USER"),
             password=os.getenv("DB_PASSWORD"))
+        print("Connexion réussie")
+        # Création et mise à jour des tables à chaque connexion
+        self.create_table_hopital()
+        self.create_table_ecole()
+        self.create_table_sport()
+        self.create_table_metro()
         
     def get_conn(self):
+        print("Connexion réussie")
         return self.conn
     
     def close_conn(self):
+        print("Fermeture de la connexion")
         self.conn.close()
         
     def create_table_hopital(self):
@@ -24,11 +32,18 @@ class Bdd:
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS hopital (
                 id SERIAL PRIMARY KEY,
-                nom_hopital VARCHAR(255),
-                adresse_hopital VARCHAR(255),
-                ville_hopital VARCHAR(255),
-                latitude_hopital VARCHAR(255),
-                longitude_hopital VARCHAR(255)
+                NOM_ETABLISSEMENT VARCHAR(255),
+                TYPE_ETABLISSEMENT VARCHAR(255),
+                ADRESSE VARCHAR(255),
+                CODE_POSTAL INTEGER,
+                VILLE VARCHAR(255),
+                DEPARTEMENT VARCHAR(255),
+                PAYS VARCHAR(255),
+                LATITUDE FLOAT,
+                LONGITUDE FLOAT,
+                SOURCE VARCHAR(255),
+                DATE_EXTRACT DATE
+
             )
         """)
         self.conn.commit()
@@ -39,27 +54,40 @@ class Bdd:
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS ecole (
                 id SERIAL PRIMARY KEY,
-                nom_ecole VARCHAR(255),
-                adresse_ecole VARCHAR(255),
-                ville_ecole VARCHAR(255),
-                latitude_ecole VARCHAR(255),
-                longitude_ecole VARCHAR(255)
+                NOM_ETABLISSEMENT VARCHAR(255),
+                TYPE_ETABLISSEMENT VARCHAR(255),
+                STATUT VARCHAR(255),
+                ADRESSE VARCHAR(255),
+                CODE_POSTAL INTEGER,
+                VILLE VARCHAR(255),
+                DEPARTEMENT VARCHAR(255),
+                PAYS VARCHAR(255),
+                LATITUDE FLOAT,
+                LONGITUDE FLOAT,
+                SOURCE VARCHAR(255),
+                DATE_EXTRACT DATE
             )
         """)
         self.conn.commit()
         cursor.close()
-
 
     def create_table_sport(self):
         cursor = self.conn.cursor()
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS sport (
                 id SERIAL PRIMARY KEY,
-                nom_sport VARCHAR(255),
-                adresse_sport VARCHAR(255),
-                ville_sport VARCHAR(255),
-                latitude_sport VARCHAR(255),
-                longitude_sport VARCHAR(255)
+                NOM_ETABLISSEMENT VARCHAR(255),
+                ADRESSE VARCHAR(255),
+                CODE_POSTAL INTEGER,
+                TYPE_EQUIPEMENT VARCHAR(255),
+                FAMILLE_EQUIPEMENT VARCHAR(255),
+                VILLE VARCHAR(255),
+                DEPARTEMENT VARCHAR(255),
+                PAYS VARCHAR(255),
+                LATITUDE FLOAT,
+                LONGITUDE FLOAT,
+                SOURCE VARCHAR(255),
+                DATE_EXTRACT DATE
             )
         """)
         self.conn.commit()
@@ -70,21 +98,87 @@ class Bdd:
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS metro (
                 id SERIAL PRIMARY KEY,
-                nom_metro VARCHAR(255),
-                adresse_metro VARCHAR(255),
-                ville_metro VARCHAR(255),
-                latitude_metro VARCHAR(255),
-                longitude_metro VARCHAR(255)
+                NOM_STATION VARCHAR(255),
+                LIGNE VARCHAR(255),
+                TYPE VARCHAR(255),
+                OPERATEUR VARCHAR(255),
+                LATITUDE FLOAT,
+                LONGITUDE FLOAT,
+                VILLE VARCHAR(255),
+                DEPARTEMENT VARCHAR(255),
+                PAYS VARCHAR(255),
+                SOURCE VARCHAR(255),
+                DATE_EXTRACT DATE
             )
+        """)
+        cursor.execute("""
+            ALTER TABLE metro ADD COLUMN IF NOT EXISTS PAYS VARCHAR(255)
         """)
         self.conn.commit()
         cursor.close()
 
-    def controle_if_data_different(self, data):
+    def insert_hopital(self, data):
         cursor = self.conn.cursor()
-        cursor.execute("""
-            SELECT * FROM hopital WHERE nom_hopital = %s AND adresse_hopital = %s AND ville_hopital = %s AND latitude_hopital = %s AND longitude_hopital = %s
-        """, (data['nom_hopital'], data['adresse_hopital'], data['ville_hopital'], data['latitude_hopital'], data['longitude_hopital']))
-        return cursor.fetchone()
-    
+        for _, row in data.iterrows():
+            cursor.execute("""
+                INSERT INTO hopital (nom_etablissement, type_etablissement, adresse, code_postal, ville, departement, pays, latitude, longitude, source, date_extract)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, (
+                row['nom_etablissement'], row['type_etablissement'], row['adresse'], row['code_postal'],
+                row['VILLE'], row['DEPARTEMENT'], row['PAYS'], row['latitude'], row['longitude'], row['source'], row['date_extraction']
+            ))
+        self.conn.commit()
+        cursor.close()
+
+    def insert_ecole(self, data):
+        cursor = self.conn.cursor()
+        for _, row in data.iterrows():
+            cursor.execute("""
+                INSERT INTO ecole (nom_etablissement, type_etablissement, statut, adresse, code_postal, ville, departement, pays, latitude, longitude, source, date_extract) 
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, (
+                row['nom_etablissement'], row['type_etablissement'], row['statut_public_prive'],
+                row['adresse_1'], row['code_postal'], row['VILLE'], row['DEPARTEMENT'], row['PAYS'],
+                row['latitude'], row['longitude'], row['source'], row['date_extraction']
+            ))
+        self.conn.commit()
+        cursor.close()
+
+    def insert_sport(self, data):
+        cursor = self.conn.cursor()
+        for _, row in data.iterrows():
+            cursor.execute("""
+                INSERT INTO sport (nom_etablissement, adresse, code_postal, type_equipement, famille_equipement, ville, departement, pays, latitude, longitude, source, date_extract)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, (
+                row['nom_etablissement'], row['adresse'], row['code_postal'],
+                row['type_equipement'], row['famille_equipement'], row['VILLE'], row['DEPARTEMENT'], row['PAYS'],
+                row['latitude'], row['longitude'], row['source'], row['date_extraction']
+            ))
+        self.conn.commit()
+        cursor.close()
+
+    def insert_metro(self, data):
+        cursor = self.conn.cursor()
+        for _, row in data.iterrows():
+            cursor.execute("""
+                INSERT INTO metro (nom_station, ligne, type, operateur, latitude, longitude, ville, departement, pays, source, date_extract)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, (
+                row['nom_station'], row['ligne'], row['type_transport'], row['operateur'],
+                row['latitude'], row['longitude'], row['VILLE'], row['DEPARTEMENT'], row['PAYS'],
+                row['source'], row['date_extraction']
+            ))
+        self.conn.commit()
+        cursor.close()
+
+
+if __name__ == "__main__":
+    bdd = Bdd()
+    bdd.create_table_hopital()
+    bdd.create_table_ecole()
+    bdd.create_table_sport()
+    bdd.create_table_metro()
+
+    bdd.close_conn()
 

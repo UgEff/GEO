@@ -7,7 +7,7 @@ import psycopg2
 from call_api import Call, File_Reader
 from processing import Correction_Structure
 from convert_df import DataWork
-
+from bdd import Bdd
 
 load_dotenv()
 
@@ -34,7 +34,12 @@ if __name__ == "__main__":
         # Ajout des informations de lignage
         df_with_lineage = data_worker.add_lineage(df, 'ecole')
         # Sauvegarder le DataFrame en xlsx
-        df_with_lineage.to_excel('ecoles_data.xlsx', index=False)
+        #df_with_lineage.to_excel('ecoles_data.xlsx', index=False)
+    
+    # INSERT INTO BDD
+    bdd = Bdd()
+    bdd.insert_ecole(df_with_lineage)
+    bdd.close_conn()
 
     # COMPLEXE SPORTIF ----------------------------------------------------------------------
     # CALL API
@@ -54,9 +59,12 @@ if __name__ == "__main__":
         df_with_lineage = data_worker.add_lineage(df, 'sport')
 
         # Sauvegarder le DataFrame en xlsx
-        df_with_lineage.to_excel('complexes_sportifs_data.xlsx', index=False)     
+        #df_with_lineage.to_excel('complexes_sportifs_data.xlsx', index=False)     
 
-    
+    # INSERT INTO BDD
+    bdd = Bdd()
+    bdd.insert_sport(df_with_lineage)
+    bdd.close_conn()
 
     # HOPITAL -------------------------------------------------------------------------------
     # CALL API - FILL READER
@@ -72,7 +80,13 @@ if __name__ == "__main__":
     result_hopital_df=datawork.convert_to_df(result_hopital_control)
     if result_hopital_df is not None:
         df_with_lineage = datawork.add_lineage(result_hopital_df,'hopital')
-        df_with_lineage.to_excel('hopital.xlsx',index=False)
+        #df_with_lineage.to_excel('hopital.xlsx',index=False)
+
+    # INSERT INTO BDD
+    bdd = Bdd()
+    bdd.insert_hopital(df_with_lineage)
+    bdd.close_conn()
+
 
     # METRO ---------------------------------------------------------------------------------
     # CALL API
@@ -89,5 +103,10 @@ if __name__ == "__main__":
     if df_metro is not None:
         df_with_lineage = data_worker.add_lineage(df_metro, 'metro')
         # Sauvegarder le DataFrame en xlsx avec l'extension
-        df_with_lineage.to_excel('test_metro_1.xlsx', index=False)  
+        #df_with_lineage.to_excel('test_metro_1.xlsx', index=False) 
+
+    # INSERT INTO BDD
+    bdd = Bdd()
+    bdd.insert_metro(df_with_lineage)
+    bdd.close_conn()
 

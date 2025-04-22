@@ -7,5 +7,5 @@
 *.xls
 *.csv
 #ignore le repertoires _pycache_
-__pycache__/
+app/__pycache__/
 

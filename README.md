@@ -15,6 +15,8 @@
 
 Les données collectées sont converties en DataFrame, enrichies (avec la source et la date d'extraction), puis insérées dans une base de données PostgreSQL.
 
+Nous avons différentes sources de données, y compris des fichiers plats et des API. Les fichiers plats en entrée sont stockés dans le répertoire `json`, et nous utilisons la classe `File_Reader` pour les traiter. Il suffit de dupliquer la méthode de cette classe afin de l'adapter au format du fichier.
+
 ## Architecture
 
 ```plaintext

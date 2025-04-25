@@ -217,90 +217,87 @@ class File_Reader:
         pass
 
     def select_hospitals(self, file_path_input):
-        # Initialiser le géocodeur
-        geolocator = Nominatim(user_agent="hospital_locator")
-
         # Charger le fichier JSON
         try:
             with open(file_path_input, "r", encoding="utf-8") as f:
                 data = json.load(f)
         except FileNotFoundError:
             print(f"Erreur : le fichier '{file_path_input}' est introuvable.")
-            return []  # Retourner une liste vide si le fichier n'est pas trouvé
+            return []
 
-        # Extraire les données nécessaires
-        etablissements = data.get("results", [])
+        # Filtrer uniquement les établissements de Paris
+        etablissements_paris = [
+            etablissement for etablissement in data.get("results", [])
+            if etablissement.get("fields", {}).get("dept") == "PARIS"
+        ]
+
+        if not etablissements_paris:
+            print("Aucun établissement parisien trouvé dans le fichier JSON.")
+            return []
+
+        # Dictionnaire des abréviations à remplacer
+        abreviations = {
+            " R ": " RUE ",
+            " AV ": " AVENUE ",
+            " BD ": " BOULEVARD ",
+            " SQ ": " SQUARE ",
+            " PL ": " PLACE ",
+            " BLD ": " BOULEVARD ",
+            " FBG ": " FAUBOURG ",
+            " RTE ": " ROUTE ",
+            " QU ": " QUAI ",
+            " QUA ": " QUAI ",
+            " VLA ": " VILLAGE ",
+            " IMP ": " IMPASSE "
+        }
+
         results = []
+        geolocator = Nominatim(user_agent="hospital_locator")
 
-        if not etablissements:
-            print("Aucun établissement trouvé dans le fichier JSON.")
-            return []  # Sortir de la méthode si aucun établissement n'est trouvé
-
-        for index, etablissement in enumerate(etablissements):
+        for index, etablissement in enumerate(etablissements_paris):
             fields = etablissement.get("fields", {})
             adresse_complete = fields.get("adresse_complete", "")
 
-            # Remplacer les " R " par " RUE "
-            adresse_complete = adresse_complete.replace(" R ", " RUE ")
-            # Remplacer les " AV " par " AVENUE "
-            adresse_complete = adresse_complete.replace(" AV ", " AVENUE ")
-            # Remplacer les " BD " par " BOULEVARD "
-            adresse_complete = adresse_complete.replace(" BD ", " BOULEVARD ")
-            # Remplacer les " SQ " par " SQUARE "
-            adresse_complete = adresse_complete.replace(" SQ ", " SQUARE ")
-            # Remplacer les " PL " par " PLACE "
-            adresse_complete = adresse_complete.replace(" PL ", " PLACE ")
-            # Remplacer les " BLD " par " BOULEVARD "
-            adresse_complete = adresse_complete.replace(" BLD ", " BOULEVARD ")
-            # Remplacer les " FBG " par " FAUBOURG "
-            adresse_complete = adresse_complete.replace(" FBG ", " FAUBOURG ")
-            # Remplacer les " RTE " par " ROUTE "
-            adresse_complete = adresse_complete.replace(" RTE ", " ROUTE ")
-            # Remplacer les " QU " par " QUAI "
-            adresse_complete = adresse_complete.replace(" QU ", " QUAI ")
-            # Remplacer les " QUA " par " QUAI "
-            adresse_complete = adresse_complete.replace(" QUA ", " QUAI ")
-            # Remplacer les " VLA " par " VILLAGE "
-            adresse_complete = adresse_complete.replace(" VLA ", " VILLAGE ")
-            # Remplacer les " IMP " par " IMPASSE "
-            adresse_complete = adresse_complete.replace(" IMP ", " IMPASSE ")
-            
+            # Corriger les abréviations dans l'adresse
+            for abrev, complet in abreviations.items():
+                adresse_complete = adresse_complete.replace(abrev, complet)
 
-            # Utiliser geopy pour obtenir la latitude et la longitude
+            # Obtenir les coordonnées géographiques
+            """""
             try:
-                location = geolocator.geocode(adresse_complete, timeout=10)  # Augmenter le délai d'attente
-                if location:
-                    longitude = location.longitude
-                    latitude = location.latitude
-                else:
-                    longitude = None
-                    latitude = None
+                location = geolocator.geocode(adresse_complete, timeout=10)
+                longitude = location.longitude if location else None
+                latitude = location.latitude if location else None
             except Exception as e:
                 print(f"Erreur lors du géocodage de l'adresse '{adresse_complete}': {e}")
                 longitude = None
                 latitude = None
-
+            """
             result = {
-                "type_etablissement": fields.get("categorie_de_l_etablissement", "Inconnu"),
-                "nom_etablissement": fields.get("raison_sociale_entite_juridique", "Inconnu"),
+                "type_etablissement": fields.get("categorie_de_l_etablissement", ""),
+                "nom_etablissement": fields.get("raison_sociale_entite_juridique", ""),
                 "PAYS": "FRANCE",
-                "VILLE": fields.get("cp_ville", "").split()[1] if len(fields.get("cp_ville", "").split()) > 1 else "Inconnue",
-                "DEPARTEMENT": fields.get("dept", "Inconnu"),
+                "VILLE": fields.get("cp_ville", "").split()[1] if len(fields.get("cp_ville", "").split()) > 1 else "",
+                "DEPARTEMENT": fields.get("dept", ""),
                 "adresse_1": adresse_complete,
-                "code_postal": fields.get("cp_ville", "").split()[0],  # Extraire le code postal
-                "longitude": longitude,
-                "latitude": latitude,
+                "code_postal": fields.get("cp_ville", "").split()[0],
+                "longitude": fields.get("wgs84", "")[1],
+                "latitude": fields.get("wgs84", "")[0],
             }
 
-            if result["DEPARTEMENT"] == "PARIS":
-                results.append(result)
+            results.append(result)
+            #time.sleep(0.1)  # Délai entre les requêtes
+            # Afficher le résultat et l'avancement
+            print(f"Traitement de l'établissement {index + 1}/{len(etablissements_paris)}")
 
-            print(f"Traitement de l'établissement {index + 1}/{len(etablissements)}")
-            
-            # Ajouter un délai entre les requêtes pour éviter d'être bloqué
-            time.sleep(1)  # Délai d'une seconde
-
+        # Sauvegarder les résultats
         with open('json_prd/hospitals_paris.json', 'w', encoding='utf-8') as f:
             json.dump({"total_count": len(results), "results": results}, f, ensure_ascii=False, indent=2)
 
         return results
+
+
+if __name__ == "__main__":
+    file_reader = File_Reader()
+    file_reader.select_hospitals("json/hospitals_paris.json")
+    

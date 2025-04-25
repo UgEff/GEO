@@ -9,8 +9,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "95 RUE MICHEL-ANGE",
       "code_postal": "75016",
-      "longitude": 2.258317,
-      "latitude": 48.8403288
+      "longitude": 2.2581138,
+      "latitude": 48.8402399
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -20,8 +20,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "14 RUE BOILEAU",
       "code_postal": "75016",
-      "longitude": 2.2653883,
-      "latitude": 48.8466758
+      "longitude": 2.2652721,
+      "latitude": 48.8464867
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -31,19 +31,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "9 RUE GUSTAVE DORE",
       "code_postal": "75017",
-      "longitude": 1.2344244,
-      "latitude": 45.8219219
+      "longitude": 2.3024255,
+      "latitude": 48.886526
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "14 CITE FALGUIÈRE",
       "code_postal": "75015",
-      "longitude": 2.3120383,
-      "latitude": 48.8408696
+      "longitude": 2.3120565,
+      "latitude": 48.8407824
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -53,8 +53,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5 RUE LEBOUTEUX",
       "code_postal": "75017",
-      "longitude": 2.3162337,
-      "latitude": 48.8834851
+      "longitude": 2.3161394,
+      "latitude": 48.8833659
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -64,8 +64,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "19 RUE OUDINOT",
       "code_postal": "75007",
-      "longitude": 5.1585633,
-      "latitude": 48.7718761
+      "longitude": 2.317552,
+      "latitude": 48.8500847
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -75,30 +75,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "12 VILLAGE COMPOINT",
       "code_postal": "75017",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.3242908,
+      "latitude": 48.8918435
     },
     {
       "type_etablissement": "Etablissement de Convalescence et de Repos",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "27 RUE DE LA JONQUIERE",
       "code_postal": "75017",
-      "longitude": 2.3248594,
-      "latitude": 48.8935053
+      "longitude": 2.3246893,
+      "latitude": 48.8935347
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "20 VILLAGE COMPOINT",
       "code_postal": "75017",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.3247595,
+      "latitude": 48.8917305
     },
     {
       "type_etablissement": "Centre Postcure Malades Mentaux",
@@ -108,8 +108,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "31T RUE DE LIÈGE",
       "code_postal": "75008",
-      "longitude": 2.3281127,
-      "latitude": 48.8796633
+      "longitude": 2.3255331,
+      "latitude": 48.8793965
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -119,52 +119,52 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "4 AVENUE DE LA PORTE DE SAINT OUEN",
       "code_postal": "75018",
-      "longitude": 2.3299824,
-      "latitude": 48.8999243
+      "longitude": 2.329088,
+      "latitude": 48.8978746
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "29 RUE SARRETTE",
       "code_postal": "75014",
-      "longitude": 2.329372,
-      "latitude": 48.8262293
+      "longitude": 2.3294242,
+      "latitude": 48.8263439
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "36 RUE D'ASSAS",
       "code_postal": "75006",
-      "longitude": 2.3296611,
-      "latitude": 48.8475857
+      "longitude": 2.3295914,
+      "latitude": 48.8476081
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "197 RUE MARCADET",
       "code_postal": "75018",
-      "longitude": 2.3342896,
-      "latitude": 48.8916851
+      "longitude": 2.3340947,
+      "latitude": 48.8917555
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "22 RUE LA GLACIÈRE",
       "code_postal": "75013",
-      "longitude": 2.3450788,
-      "latitude": 48.835855
+      "longitude": 2.3450448,
+      "latitude": 48.8358663
     },
     {
       "type_etablissement": "Centre Postcure Malades Mentaux",
@@ -174,8 +174,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "8 RUE LANNEAU",
       "code_postal": "75005",
-      "longitude": 2.346615,
-      "latitude": 48.848354
+      "longitude": 2.3466214,
+      "latitude": 48.8483432
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -185,8 +185,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "8 RUE LANNEAU",
       "code_postal": "75005",
-      "longitude": 2.346615,
-      "latitude": 48.848354
+      "longitude": 2.3466214,
+      "latitude": 48.8483432
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -196,8 +196,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "20 RUE CHAMPIONNET",
       "code_postal": "75018",
-      "longitude": 2.3509263,
-      "latitude": 48.8953895
+      "longitude": 2.3515583,
+      "latitude": 48.8951518
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -207,8 +207,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "2 RUE AMBROISE PARE",
       "code_postal": "75475",
-      "longitude": 2.3541014,
-      "latitude": 48.8818499
+      "longitude": 2.3527289,
+      "latitude": 48.8819273
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -218,8 +218,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "76 AVENUE EDISON",
       "code_postal": "75013",
-      "longitude": 2.3583442,
-      "latitude": 48.8302381
+      "longitude": 2.3582458,
+      "latitude": 48.8302065
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -229,8 +229,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "200 RUE FAUBOURG SAINT-DENIS",
       "code_postal": "75010",
-      "longitude": 2.3584307,
-      "latitude": 48.8816386
+      "longitude": 2.3584552,
+      "latitude": 48.8817067
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -240,30 +240,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "QU DE LA RAPEE",
       "code_postal": "75012",
-      "longitude": 2.3659024,
-      "latitude": 48.8464813
+      "longitude": 2.3881833,
+      "latitude": 48.8408083
     },
     {
       "type_etablissement": "Etablissement Réadaptation Fonctionnelle",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "104 RUE DES COURONNES",
       "code_postal": "75020",
-      "longitude": 2.3886961,
-      "latitude": 48.8710261
+      "longitude": 2.3887031,
+      "latitude": 48.8710419
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "11 RUE GÉNÉRAL NIOX",
       "code_postal": "75016",
-      "longitude": 2.2622276,
-      "latitude": 48.8367969
+      "longitude": 2.2625375,
+      "latitude": 48.8367474
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -273,8 +273,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "11 RUE CHARDON LAGACHE",
       "code_postal": "75016",
-      "longitude": 2.2643496,
-      "latitude": 48.842296
+      "longitude": 2.2668309,
+      "latitude": 48.8449824
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -284,8 +284,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "49 RUE MIRABEAU",
       "code_postal": "75016",
-      "longitude": 2.2680306,
-      "latitude": 48.8455728
+      "longitude": 2.2681367,
+      "latitude": 48.8455671
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -295,19 +295,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "24 RUE BAYEN",
       "code_postal": "75017",
-      "longitude": 2.293832,
-      "latitude": 48.8804684
+      "longitude": 2.2941411,
+      "latitude": 48.8806133
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "37 RUE DE COURCELLES",
       "code_postal": "75008",
-      "longitude": 2.308526,
-      "latitude": 48.8755442
+      "longitude": 2.3086774,
+      "latitude": 48.8755357
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -317,8 +317,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "40 BOULEVARD DU MONTPARNASSE",
       "code_postal": "75015",
-      "longitude": 2.3203859,
-      "latitude": 48.8448458
+      "longitude": 2.3203717,
+      "latitude": 48.8448607
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -328,19 +328,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "145B RUE D'ALÉSIA",
       "code_postal": "75014",
-      "longitude": 2.313849,
-      "latitude": 48.8318912
+      "longitude": 2.3206472,
+      "latitude": 48.8299483
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "146 AVENUE DE SAINT-OUEN",
       "code_postal": "75018",
-      "longitude": 2.3289126,
-      "latitude": 48.8969039
+      "longitude": 2.3290195,
+      "latitude": 48.8968974
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -350,8 +350,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "42 BOULEVARD JOURDAN",
       "code_postal": "75014",
-      "longitude": 2.3326471,
-      "latitude": 48.8218428
+      "longitude": 2.3325274,
+      "latitude": 48.8218125
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -361,8 +361,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "82 AVENUE DENFERT-ROCHEREAU",
       "code_postal": "75014",
-      "longitude": 2.3344967,
-      "latitude": 48.8367589
+      "longitude": 2.3338655,
+      "latitude": 48.8359687
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -372,30 +372,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "64 RUE RENE BINET",
       "code_postal": "75018",
-      "longitude": 2.336978,
-      "latitude": 48.8993694
+      "longitude": 2.3366828,
+      "latitude": 48.8991572
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5 RUE CLAUZEL",
       "code_postal": "75009",
-      "longitude": 2.3393045,
-      "latitude": 48.878948
+      "longitude": 2.3391798,
+      "latitude": 48.8789746
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "124 BOULEVARD NEY",
       "code_postal": "75018",
-      "longitude": 2.3410948,
-      "latitude": 48.8980594
+      "longitude": 2.3408543,
+      "latitude": 48.8978872
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -405,30 +405,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "54 RUE PASCAL",
       "code_postal": "75013",
-      "longitude": 2.3478134,
-      "latitude": 48.8347802
+      "longitude": 2.347548,
+      "latitude": 48.8340632
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "22 BOULEVARD SEBASTOPOL",
       "code_postal": "75004",
-      "longitude": 2.3495364,
-      "latitude": 48.860406
+      "longitude": 2.3494433,
+      "latitude": 48.8604368
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "14 RUE BRANTOME",
       "code_postal": "75003",
-      "longitude": 1.246389,
-      "latitude": 45.83962
+      "longitude": 2.353097,
+      "latitude": 48.862438
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -438,19 +438,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "13 RUE ALBERT BAYET",
       "code_postal": "75013",
-      "longitude": 2.358688,
-      "latitude": 48.8305977
+      "longitude": 2.358756,
+      "latitude": 48.8306506
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "10 RUE RIVOLI",
       "code_postal": "75004",
-      "longitude": 7.5686811,
-      "latitude": 48.2874127
+      "longitude": 2.3604543,
+      "latitude": 48.8554689
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -460,8 +460,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "155 BOULEVARD VINCENT AURIOL",
       "code_postal": "75013",
-      "longitude": 2.3615182,
-      "latitude": 48.8324033
+      "longitude": 2.3614805,
+      "latitude": 48.8324153
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -471,8 +471,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "120 QUAI DE JEMMAPES",
       "code_postal": "75010",
-      "longitude": 2.3641513,
-      "latitude": 48.8751311
+      "longitude": 2.3641778,
+      "latitude": 48.8751735
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -482,8 +482,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "4 RUE CHARLES LAUTH",
       "code_postal": "75018",
-      "longitude": 2.3683523,
-      "latitude": 48.8990745
+      "longitude": 2.3683833,
+      "latitude": 48.8989806
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -493,8 +493,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "184 RUE DU FAUBOURG SAINT ANTOINE",
       "code_postal": "75571",
-      "longitude": 2.3816075,
-      "latitude": 48.848083
+      "longitude": 2.3829799,
+      "latitude": 48.850251
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -504,8 +504,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "213 RUE DE BELLEVILLE",
       "code_postal": "75019",
-      "longitude": 4.7190738,
-      "latitude": 45.9973617
+      "longitude": 2.395214,
+      "latitude": 48.8752699
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -515,8 +515,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "4 RUE DE LA CHINE",
       "code_postal": "75970",
-      "longitude": 2.4007382,
-      "latitude": 48.8657165
+      "longitude": 2.4010043,
+      "latitude": 48.8658578
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -526,52 +526,52 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "13 SQUARE DES CARDEURS",
       "code_postal": "75020",
-      "longitude": 5.2422706,
-      "latitude": 43.5541899
+      "longitude": 2.4074078,
+      "latitude": 48.858564
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "46 RUE NICOLO",
       "code_postal": "75116",
-      "longitude": 2.2777641,
-      "latitude": 48.8603713
+      "longitude": 2.2777603,
+      "latitude": 48.8603562
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "11 AVENUE DU COLONEL BONNET",
       "code_postal": "75016",
-      "longitude": 2.2783095,
-      "latitude": 48.8553272
+      "longitude": 2.2782396,
+      "latitude": 48.8554944
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "6 RUE PICOT",
       "code_postal": "75116",
-      "longitude": 2.2821126,
-      "latitude": 48.8709521
+      "longitude": 2.2821631,
+      "latitude": 48.8709172
     },
     {
       "type_etablissement": "Etablissement de Soins Médicaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "106 AVENUE EMILE ZOLA",
       "code_postal": "75015",
-      "longitude": 2.2897169,
-      "latitude": 48.8466349
+      "longitude": 2.2897932,
+      "latitude": 48.8466393
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -581,19 +581,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5B RUE DU DOME",
       "code_postal": "75016",
-      "longitude": 2.2913594,
-      "latitude": 48.8714289
+      "longitude": 2.2913808,
+      "latitude": 48.8713798
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "1719 RUE D'ARMAILLÉ",
       "code_postal": "75017",
-      "longitude": 2.2915667,
-      "latitude": 48.8780759
+      "longitude": 2.2915469,
+      "latitude": 48.878101
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -603,8 +603,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "15 RUE PIERRE DEMOURS",
       "code_postal": "75017",
-      "longitude": 2.2929897,
-      "latitude": 48.8806074
+      "longitude": 2.2930475,
+      "latitude": 48.8806069
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -614,8 +614,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "136B RUE BLOMET",
       "code_postal": "75015",
-      "longitude": 2.2987273,
-      "latitude": 48.8403494
+      "longitude": 2.2961015,
+      "latitude": 48.8394852
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -625,19 +625,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "23 RUE TIPHAINE",
       "code_postal": "75015",
-      "longitude": 2.2966017,
-      "latitude": 48.8488195
+      "longitude": 2.2964935,
+      "latitude": 48.8488179
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "25 VILLAGE SANTOS DUMONT",
       "code_postal": "75015",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.3049715,
+      "latitude": 48.8337932
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -647,19 +647,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "64 RUE LABROUSTE",
       "code_postal": "75015",
-      "longitude": 2.3065797,
-      "latitude": 48.8323932
+      "longitude": 2.3065391,
+      "latitude": 48.832139
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "3133 RUE HENRI ROCHEFORT",
       "code_postal": "75017",
-      "longitude": 2.3076694,
-      "latitude": 48.8821143
+      "longitude": 2.3076576,
+      "latitude": 48.8821044
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -669,8 +669,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "26 BOULEVARD BRUNE",
       "code_postal": "75014",
-      "longitude": 2.3077639,
-      "latitude": 48.8269678
+      "longitude": 2.3077751,
+      "latitude": 48.8270097
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -680,8 +680,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "96 RUE DIDOT",
       "code_postal": "75014",
-      "longitude": 2.3145182,
-      "latitude": 48.827419
+      "longitude": 2.3144097,
+      "latitude": 48.8272791
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -691,8 +691,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "68 RUE DES PLANTES",
       "code_postal": "75014",
-      "longitude": 2.3197471,
-      "latitude": 48.8264635
+      "longitude": 2.3198741,
+      "latitude": 48.8264869
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -702,8 +702,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "19 RUE VERCINGETORIX",
       "code_postal": "75014",
-      "longitude": 2.3199448,
-      "latitude": 48.8373568
+      "longitude": 2.3200169,
+      "latitude": 48.8373764
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -713,19 +713,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "12 RUE CHOMEL",
       "code_postal": "75007",
-      "longitude": 2.324898,
-      "latitude": 48.8519438
+      "longitude": 2.3249202,
+      "latitude": 48.8519394
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "258 RUE MARCADET",
       "code_postal": "75018",
-      "longitude": 2.329077,
-      "latitude": 48.8927898
+      "longitude": 2.3296582,
+      "latitude": 48.8926259
     },
     {
       "type_etablissement": "Etablissement de Soins Longue Durée",
@@ -735,8 +735,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "15 AVENUE DU GENERAL LECLERC",
       "code_postal": "75014",
-      "longitude": 2.33109,
-      "latitude": 48.8324183
+      "longitude": 2.3307216,
+      "latitude": 48.832189
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -746,8 +746,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "22 RUE DU PERE CORENTIN",
       "code_postal": "75014",
-      "longitude": 2.3308288,
-      "latitude": 48.8262869
+      "longitude": 2.3307716,
+      "latitude": 48.8262492
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -757,8 +757,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "8 RUE JEAN DOLLFUS",
       "code_postal": "75018",
-      "longitude": 2.3334662,
-      "latitude": 48.8966979
+      "longitude": 2.3334914,
+      "latitude": 48.8966443
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -768,19 +768,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "8 RUE JEAN-DOLLFUS",
       "code_postal": "75018",
-      "longitude": 2.3334662,
-      "latitude": 48.8966979
+      "longitude": 2.3334914,
+      "latitude": 48.8966443
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "20B RUE RUE DE DOUAI",
       "code_postal": "75009",
-      "longitude": 2.3344849,
-      "latitude": 48.8819128
+      "longitude": 2.334349,
+      "latitude": 48.8819149
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -790,8 +790,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "1 RUE CABANIS",
       "code_postal": "75014",
-      "longitude": 2.3390755,
-      "latitude": 48.8283176
+      "longitude": 2.3412612,
+      "latitude": 48.8302646
     },
     {
       "type_etablissement": "Centre de Lutte Contre Cancer",
@@ -801,30 +801,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "26 RUE D'ULM",
       "code_postal": "75005",
-      "longitude": 2.3447939,
-      "latitude": 48.8434957
+      "longitude": 2.3447836,
+      "latitude": 48.8435418
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "10 RUE WURTZ",
       "code_postal": "75013",
-      "longitude": 2.3449621,
-      "latitude": 48.827339
+      "longitude": 2.3450518,
+      "latitude": 48.8273142
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "8 RUE LANNEAU",
       "code_postal": "75005",
-      "longitude": 2.346615,
-      "latitude": 48.848354
+      "longitude": 2.3466214,
+      "latitude": 48.8483432
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -834,8 +834,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "56 RUE DU FAUBOURG POISSONNIÈRE",
       "code_postal": "75010",
-      "longitude": 2.3481571,
-      "latitude": 48.8749246
+      "longitude": 2.3481136,
+      "latitude": 48.8749754
     },
     {
       "type_etablissement": "Centre Postcure Malades Mentaux",
@@ -845,8 +845,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "7 RUE DES GOBELINS",
       "code_postal": "75013",
-      "longitude": 2.3516809,
-      "latitude": 48.8357777
+      "longitude": 2.3516383,
+      "latitude": 48.8357354
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -856,8 +856,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "14 RUE VESALE",
       "code_postal": "75005",
-      "longitude": 2.3523715,
-      "latitude": 48.8379702
+      "longitude": 2.3521788,
+      "latitude": 48.837893
     },
     {
       "type_etablissement": "Atelier Thérapeutique",
@@ -867,8 +867,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "12 RUE HOSPITALIÈRES ST-GERVAIS",
       "code_postal": "75004",
-      "longitude": 2.3592256,
-      "latitude": 48.8581445
+      "longitude": 2.3590526,
+      "latitude": 48.8580864
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -878,19 +878,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "1 AVENUE CLAUDE VELLEFAUX",
       "code_postal": "75475",
-      "longitude": 2.3701001,
-      "latitude": 48.8732416
+      "longitude": 2.3696898,
+      "latitude": 48.872706
     },
     {
       "type_etablissement": "Centre Crise Accueil Permanent",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "63 RUE DE LA ROQUETTE",
       "code_postal": "75011",
-      "longitude": 2.3761714,
-      "latitude": 48.8562351
+      "longitude": 2.3752069,
+      "latitude": 48.8558373
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -900,8 +900,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5 RUE SANTERRE",
       "code_postal": "75571",
-      "longitude": 2.3986281,
-      "latitude": 48.8435858
+      "longitude": 2.4013272,
+      "latitude": 48.8434977
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -911,8 +911,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "89 RUE HAXO",
       "code_postal": "75020",
-      "longitude": 2.4029701,
-      "latitude": 48.8747469
+      "longitude": 2.4030507,
+      "latitude": 48.8747633
     },
     {
       "type_etablissement": "Etablissement de Soins Longue Durée",
@@ -922,19 +922,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "95 RUE MICHEL ANGE",
       "code_postal": "75016",
-      "longitude": 2.258317,
-      "latitude": 48.8403288
+      "longitude": 2.2581138,
+      "latitude": 48.8402399
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "21 RUE DE REMUSAT",
       "code_postal": "75016",
-      "longitude": 2.2712058,
-      "latitude": 48.8478739
+      "longitude": 2.2714179,
+      "latitude": 48.8479117
     },
     {
       "type_etablissement": "Centre Postcure Malades Mentaux",
@@ -944,8 +944,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "37B RUE SEBASTIEN MERCIER",
       "code_postal": "75015",
-      "longitude": 2.2798582,
-      "latitude": 48.8439706
+      "longitude": 2.2797754,
+      "latitude": 48.844026
     },
     {
       "type_etablissement": "Etablissement Réadaptation Fonctionnelle",
@@ -955,41 +955,41 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "48 RUE DE LA CONVENTION",
       "code_postal": "75015",
-      "longitude": 2.2816399,
-      "latitude": 48.84384
+      "longitude": 2.2815949,
+      "latitude": 48.8438776
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "23 RUE TIPHAINE",
       "code_postal": "75015",
-      "longitude": 2.2966017,
-      "latitude": 48.8488195
+      "longitude": 2.2964935,
+      "latitude": 48.8488179
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "26 BOULEVARD BRUNE",
       "code_postal": "75014",
-      "longitude": 2.3077639,
-      "latitude": 48.8269678
+      "longitude": 2.3077751,
+      "latitude": 48.8270097
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "9 RUE JEAN GOUJON",
       "code_postal": "75008",
-      "longitude": 2.3088179,
-      "latitude": 48.8663911
+      "longitude": 2.3085867,
+      "latitude": 48.8663932
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -999,8 +999,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "17 RUE DE MILAN",
       "code_postal": "75009",
-      "longitude": 2.3276591,
-      "latitude": 48.8787315
+      "longitude": 2.3277329,
+      "latitude": 48.8787218
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1010,8 +1010,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "46 RUE HENRI HUCHARD",
       "code_postal": "75877",
-      "longitude": 2.3324776,
-      "latitude": 48.8989921
+      "longitude": 2.3295922,
+      "latitude": 48.8990394
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1021,19 +1021,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "27 RUE DU FAUBOURG SAINT-JACQUES",
       "code_postal": "75679",
-      "longitude": 2.3395041,
-      "latitude": 48.8360313
+      "longitude": 2.3377527,
+      "latitude": 48.8358652
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "115 RUE DE LA SANTE",
       "code_postal": "75013",
-      "longitude": 2.3417204,
-      "latitude": 48.8286755
+      "longitude": 2.3415387,
+      "latitude": 48.8288102
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1043,19 +1043,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "20 BOULEVARD JOURDAN",
       "code_postal": "75014",
-      "longitude": 2.3418259,
-      "latitude": 48.8199116
+      "longitude": 2.3417089,
+      "latitude": 48.8199718
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "13 RUE GRANDE BATELIERE",
       "code_postal": "75009",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.3419865,
+      "latitude": 48.8731588
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1065,8 +1065,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "187 RUE SAINT-JACQUES",
       "code_postal": "75005",
-      "longitude": 2.342536,
-      "latitude": 48.8452108
+      "longitude": 2.3425193,
+      "latitude": 48.8451473
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1076,8 +1076,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "81 RUE VERGNIAUD",
       "code_postal": "75013",
-      "longitude": 2.3444456,
-      "latitude": 48.8235603
+      "longitude": 2.3443368,
+      "latitude": 48.8234627
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -1087,19 +1087,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "11 RUE ABBEVILLE",
       "code_postal": "75010",
-      "longitude": 1.6673051,
-      "latitude": 50.272874
+      "longitude": 2.3503273,
+      "latitude": 48.878593
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "8 PLACE DE L'ABBE G. HENOCQUE",
       "code_postal": "75013",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.3529865,
+      "latitude": 48.8238387
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1109,30 +1109,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "7 RUE DU FER A MOULIN",
       "code_postal": "75005",
-      "longitude": 2.3554278,
-      "latitude": 48.8393473
+      "longitude": 2.3554403,
+      "latitude": 48.8392397
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "36 BOULEVARD SAINT MARCEL",
       "code_postal": "75005",
-      "longitude": 2.3580748,
-      "latitude": 48.83902
+      "longitude": 2.3577837,
+      "latitude": 48.8387317
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "21 RUE LUCIEN SAMPAIX",
       "code_postal": "75010",
-      "longitude": 2.3609267,
-      "latitude": 48.8724686
+      "longitude": 2.3609359,
+      "latitude": 48.8723996
     },
     {
       "type_etablissement": "Centre Postcure Malades Mentaux",
@@ -1142,19 +1142,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "8B RUE CAILLAUX",
       "code_postal": "75013",
-      "longitude": 2.3604882,
-      "latitude": 48.8224957
+      "longitude": 2.3615038,
+      "latitude": 48.822833
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "15 AVENUE DE LA PORTE DE CHOISY",
       "code_postal": "75013",
-      "longitude": 2.3650131,
-      "latitude": 48.8185662
+      "longitude": 2.3653728,
+      "latitude": 48.8187203
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1164,19 +1164,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "29 RUE DU FAUBOURG ST-ANTOINE",
       "code_postal": "75011",
-      "longitude": 2.3716298,
-      "latitude": 48.8526332
+      "longitude": 2.3716623,
+      "latitude": 48.8525974
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "53 BOULEVARD DIDEROT",
       "code_postal": "75012",
-      "longitude": 2.3820978,
-      "latitude": 48.8469559
+      "longitude": 2.3820807,
+      "latitude": 48.846965
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -1186,8 +1186,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5 COUR DE LA METAIRIE",
       "code_postal": "75020",
-      "longitude": 2.385904,
-      "latitude": 48.8734701
+      "longitude": 2.3857427,
+      "latitude": 48.8736016
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1197,8 +1197,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "14 RUE EUGENIE EBOUE",
       "code_postal": "75012",
-      "longitude": 2.3865159,
-      "latitude": 48.845603
+      "longitude": 2.386425,
+      "latitude": 48.8457132
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1208,8 +1208,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "10 RUE VAUGELAS",
       "code_postal": "75015",
-      "longitude": 2.2946627,
-      "latitude": 48.8344353
+      "longitude": 2.2943108,
+      "latitude": 48.8341938
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1219,8 +1219,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5 IMPASSE DU LABRADOR",
       "code_postal": "75015",
-      "longitude": 2.3031913,
-      "latitude": 48.829173
+      "longitude": 2.3030533,
+      "latitude": 48.8292431
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -1230,19 +1230,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "6 RUE JACQUEMONT",
       "code_postal": "75017",
-      "longitude": 2.3231544,
-      "latitude": 48.888359
+      "longitude": 2.3232148,
+      "latitude": 48.8883323
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "31 RUE DE LIÈGE",
       "code_postal": "75008",
-      "longitude": 2.3259841,
-      "latitude": 48.8794012
+      "longitude": 2.3260074,
+      "latitude": 48.8794624
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1252,8 +1252,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "30 RUE DE MOGADOR",
       "code_postal": "75009",
-      "longitude": 2.3313236,
-      "latitude": 48.8756808
+      "longitude": 2.331333,
+      "latitude": 48.8756527
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1263,19 +1263,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "23 RUE DE LA ROCHEFOUCAULD",
       "code_postal": "75009",
-      "longitude": 3.142718,
-      "latitude": 50.726515
+      "longitude": 2.3345199,
+      "latitude": 48.8786677
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "100 RUE DE LA SANTE",
       "code_postal": "75158",
-      "longitude": 2.3414249,
-      "latitude": 48.8339614
+      "longitude": 2.341519,
+      "latitude": 48.8273455
     },
     {
       "type_etablissement": "Atelier Thérapeutique",
@@ -1285,8 +1285,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "25 RUE CHARLES FOURRIER",
       "code_postal": "75013",
-      "longitude": 2.455817,
-      "latitude": 48.929153
+      "longitude": 2.3513743,
+      "latitude": 48.8250138
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1296,30 +1296,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "36 RUE DE TURBIGO",
       "code_postal": "75003",
-      "longitude": 2.3529787,
-      "latitude": 48.8646595
+      "longitude": 2.3530148,
+      "latitude": 48.864668
     },
     {
       "type_etablissement": "Etablissement Réadaptation Fonctionnelle",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "35 BOULEVARD SAINT-MARCEL",
       "code_postal": "75013",
-      "longitude": 2.3584979,
-      "latitude": 48.8387048
+      "longitude": 2.3578001,
+      "latitude": 48.83871
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "2 RUE DU FIGUIER",
       "code_postal": "75004",
-      "longitude": 2.3592635,
-      "latitude": 48.8536069
+      "longitude": 2.3592976,
+      "latitude": 48.8536066
     },
     {
       "type_etablissement": "Atelier Thérapeutique",
@@ -1329,8 +1329,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "22 RUE DE LA POINTE D'IVRY",
       "code_postal": "75013",
-      "longitude": 2.3644455,
-      "latitude": 48.822675
+      "longitude": 2.3637947,
+      "latitude": 48.822432
     },
     {
       "type_etablissement": "Centre Hospitalier (C.H.)",
@@ -1340,8 +1340,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "63 RUE DE LA ROQUETTE",
       "code_postal": "75011",
-      "longitude": 2.3761714,
-      "latitude": 48.8562351
+      "longitude": 2.3752069,
+      "latitude": 48.8558373
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -1351,30 +1351,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "25 RUE MANIN",
       "code_postal": "75940",
-      "longitude": 2.3781169,
-      "latitude": 48.8779083
+      "longitude": 2.3780879,
+      "latitude": 48.8779116
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "45 RUE REBEVAL",
       "code_postal": "75019",
-      "longitude": 2.3793228,
-      "latitude": 48.8748286
+      "longitude": 2.3792821,
+      "latitude": 48.8748661
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "16 RUE EUGENIE EBOUE",
       "code_postal": "75012",
-      "longitude": 2.3865966,
-      "latitude": 48.845603
+      "longitude": 2.3866238,
+      "latitude": 48.8457171
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1384,8 +1384,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "36 RUE DE LA VILLETTE",
       "code_postal": "75019",
-      "longitude": 3.4944304,
-      "latitude": 50.358897
+      "longitude": 2.3878413,
+      "latitude": 48.8766423
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1395,8 +1395,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "26 AVENUE DU DR ARNOLD NETTER",
       "code_postal": "75571",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.3881833,
+      "latitude": 48.8408083
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1406,30 +1406,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "3 RUE LESPAGNOL",
       "code_postal": "75020",
-      "longitude": 2.3921985,
-      "latitude": 48.8584626
+      "longitude": 2.3921466,
+      "latitude": 48.8583921
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "9  SENTE DES DOREES",
       "code_postal": "75019",
-      "longitude": 2.3931821,
-      "latitude": 48.8875719
+      "longitude": 2.393777,
+      "latitude": 48.8870974
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "31 RUE LA BRÈCHE AUX LOUPS",
       "code_postal": "75012",
-      "longitude": 2.3947749,
-      "latitude": 48.8380822
+      "longitude": 2.3948933,
+      "latitude": 48.8380814
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1439,19 +1439,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5 RUE SANTERRE",
       "code_postal": "75006",
-      "longitude": 2.3986281,
-      "latitude": 48.8435858
+      "longitude": 2.4013272,
+      "latitude": 48.8434977
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "67 RUE DE ROMAINVILLE",
       "code_postal": "75019",
-      "longitude": 2.4042515,
-      "latitude": 48.8771511
+      "longitude": 2.4045038,
+      "latitude": 48.8770417
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1461,8 +1461,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "15 SQUARE DES CARDEURS",
       "code_postal": "75020",
-      "longitude": 2.4074199,
-      "latitude": 48.8585251
+      "longitude": 2.4072562,
+      "latitude": 48.8585006
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1472,19 +1472,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "35 RUE DES CEVENNES",
       "code_postal": "75015",
-      "longitude": 2.2788702,
-      "latitude": 48.8433578
+      "longitude": 2.2788163,
+      "latitude": 48.8434072
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "11 RUE TISSERAND",
       "code_postal": "75015",
-      "longitude": 2.2850239,
-      "latitude": 48.8403449
+      "longitude": 2.2842274,
+      "latitude": 48.8406532
     },
     {
       "type_etablissement": "Etablissement Réadaptation Fonctionnelle",
@@ -1494,8 +1494,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "15 RUE EUGENE MILLON",
       "code_postal": "75015",
-      "longitude": 2.2927383,
-      "latitude": 48.8376822
+      "longitude": 2.2928287,
+      "latitude": 48.8377714
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -1505,8 +1505,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "21 RUE DE CHAZELLES",
       "code_postal": "75017",
-      "longitude": 2.3042853,
-      "latitude": 48.8799578
+      "longitude": 2.3042696,
+      "latitude": 48.8799408
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1516,19 +1516,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "164 RUE DE GRENELLE",
       "code_postal": "75007",
-      "longitude": 2.3089956,
-      "latitude": 48.8580602
+      "longitude": 2.3089662,
+      "latitude": 48.8580522
     },
     {
       "type_etablissement": "Centre Postcure Malades Mentaux",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "110 RUE LEMERCIER",
       "code_postal": "75017",
-      "longitude": 2.3177797,
-      "latitude": 48.8901612
+      "longitude": 2.3175448,
+      "latitude": 48.8900596
     },
     {
       "type_etablissement": "Centre Crise Accueil Permanent",
@@ -1538,8 +1538,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "17 RUE GARANCIERE",
       "code_postal": "75006",
-      "longitude": 2.3360148,
-      "latitude": 48.8495706
+      "longitude": 2.3359801,
+      "latitude": 48.8495308
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1549,8 +1549,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "45 RUE LA TOUR D'AUVERGNE",
       "code_postal": "75009",
-      "longitude": -1.5606696,
-      "latitude": 47.2058542
+      "longitude": 2.3409384,
+      "latitude": 48.8797379
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -1560,19 +1560,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "17 RUE DES PRETRES SAINT GERMAIN",
       "code_postal": "75001",
-      "longitude": 2.3411286,
-      "latitude": 48.8592105
+      "longitude": 2.3411803,
+      "latitude": 48.8592238
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "40 VOI ORDONER",
       "code_postal": "75018",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.3444472,
+      "latitude": 48.89215
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -1582,19 +1582,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "55 RUE DU SIMPLON",
       "code_postal": "75018",
-      "longitude": 2.3465015,
-      "latitude": 48.8947395
+      "longitude": 2.3463234,
+      "latitude": 48.8948404
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5 RUE SAINT DENIS",
       "code_postal": "75001",
-      "longitude": 1.4482136,
-      "latitude": 43.5862084
+      "longitude": 2.3474434,
+      "latitude": 48.8587662
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1604,8 +1604,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "6 RUE DU CONVENTIONNEL CHIAPPE",
       "code_postal": "75013",
-      "longitude": 2.3631394,
-      "latitude": 48.8188243
+      "longitude": 2.3631339,
+      "latitude": 48.8188166
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1615,8 +1615,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "44 QUAI DE LA LOIRE",
       "code_postal": "75019",
-      "longitude": 2.3750206,
-      "latitude": 48.8853275
+      "longitude": 2.3751111,
+      "latitude": 48.8853883
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1626,8 +1626,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "68 RUE DES GRANDS MOULINS",
       "code_postal": "75013",
-      "longitude": 2.375606,
-      "latitude": 48.8274715
+      "longitude": 2.3754926,
+      "latitude": 48.8273832
     },
     {
       "type_etablissement": "Etablissement de Convalescence et de Repos",
@@ -1637,19 +1637,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "9 RUE DES BLUETS",
       "code_postal": "75011",
-      "longitude": 2.3818547,
-      "latitude": 48.8644409
+      "longitude": 2.3818073,
+      "latitude": 48.864351
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "25 RUE SERVAN",
       "code_postal": "75011",
-      "longitude": 2.3832719,
-      "latitude": 48.8602915
+      "longitude": 2.3833278,
+      "latitude": 48.8603525
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1659,8 +1659,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "97 RUE DE CRIMÉE",
       "code_postal": "75019",
-      "longitude": 2.3837742,
-      "latitude": 48.8842724
+      "longitude": 2.3840322,
+      "latitude": 48.8842436
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1670,19 +1670,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "13 RUE DU SAHEL",
       "code_postal": "75012",
-      "longitude": 2.4028264,
-      "latitude": 48.8411035
+      "longitude": 2.4027729,
+      "latitude": 48.8411357
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "4 RUE LASSON",
       "code_postal": "75571",
-      "longitude": 2.4063574,
-      "latitude": 48.8431212
+      "longitude": 2.4061284,
+      "latitude": 48.8431462
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -1692,8 +1692,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "6 SQUARE JOUVENET",
       "code_postal": "75016",
-      "longitude": 2.2661613,
-      "latitude": 48.8423019
+      "longitude": 2.2661735,
+      "latitude": 48.8422877
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1703,19 +1703,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "20 RUE LEBLANC",
       "code_postal": "75908",
-      "longitude": 2.2749032,
-      "latitude": 48.8388657
+      "longitude": 2.2728302,
+      "latitude": 48.839737
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "29 RUE SAINT DIDIER",
       "code_postal": "75016",
-      "longitude": 2.2858208,
-      "latitude": 48.8663105
+      "longitude": 2.2855778,
+      "latitude": 48.8663942
     },
     {
       "type_etablissement": "Etablissement Soins Obstétriques Chirurgico-Gynécologiques",
@@ -1725,8 +1725,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "37 RUE SAINT LAMBERT",
       "code_postal": "75015",
-      "longitude": -1.8762533,
-      "latitude": 48.108809
+      "longitude": 2.2929899,
+      "latitude": 48.8367925
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1736,8 +1736,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "152 AVENUE DE WAGRAM",
       "code_postal": "75017",
-      "longitude": 2.3045633,
-      "latitude": 48.8865448
+      "longitude": 2.304545,
+      "latitude": 48.8865064
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -1747,8 +1747,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "26 BOULEVARD BRUNE",
       "code_postal": "75014",
-      "longitude": 2.3077639,
-      "latitude": 48.8269678
+      "longitude": 2.3077751,
+      "latitude": 48.8270097
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1758,8 +1758,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "178 RUE DE VAUGIRARD",
       "code_postal": "75015",
-      "longitude": 2.3096869,
-      "latitude": 48.8427081
+      "longitude": 2.3102443,
+      "latitude": 48.8422161
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1769,8 +1769,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "3 RUE DE RIDDER",
       "code_postal": "75014",
-      "longitude": 2.3118311,
-      "latitude": 48.8311324
+      "longitude": 2.3118698,
+      "latitude": 48.8311258
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1780,8 +1780,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "149 RUE DE SEVRES",
       "code_postal": "75743",
-      "longitude": 2.3156805,
-      "latitude": 48.846456
+      "longitude": 2.3154638,
+      "latitude": 48.8463516
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -1791,8 +1791,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "185 RUE RAYMOND LOSSERAND",
       "code_postal": "75674",
-      "longitude": 2.3112209,
-      "latitude": 48.8302672
+      "longitude": 2.3220607,
+      "latitude": 48.836198
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1802,8 +1802,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "12 RUE JACQUEMONT",
       "code_postal": "75017",
-      "longitude": 2.3227507,
-      "latitude": 48.8880559
+      "longitude": 2.3227945,
+      "latitude": 48.8880292
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1813,41 +1813,41 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "23 RUE JOSEPH DE MAISTRE",
       "code_postal": "75885",
-      "longitude": 2.3312479,
-      "latitude": 48.8900884
+      "longitude": 2.3310632,
+      "latitude": 48.8908011
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "89 RUE D'ASSAS",
       "code_postal": "75006",
-      "longitude": 2.335858,
-      "latitude": 48.8414055
+      "longitude": 2.3354499,
+      "latitude": 48.8418464
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "18 RUE DE LA TOUR D'AUVERGNE",
       "code_postal": "75009",
-      "longitude": 2.795291,
-      "latitude": 50.432087
+      "longitude": 2.3441854,
+      "latitude": 48.8790801
     },
     {
       "type_etablissement": "Etablissement de Soins Longue Durée",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "33 RUE DU FER A MOULIN",
       "code_postal": "75005",
-      "longitude": 2.3523165,
-      "latitude": 48.8386882
+      "longitude": 2.3523275,
+      "latitude": 48.8386888
     },
     {
       "type_etablissement": "Centre Postcure Malades Mentaux",
@@ -1857,8 +1857,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "13 RUE DU BANQUIER",
       "code_postal": "75013",
-      "longitude": 2.3568809,
-      "latitude": 48.8357923
+      "longitude": 2.3568493,
+      "latitude": 48.8358109
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1868,8 +1868,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "6 RUE DU CONVENTIONNEL CHIAPPE",
       "code_postal": "75013",
-      "longitude": 2.3631394,
-      "latitude": 48.8188243
+      "longitude": 2.3631339,
+      "latitude": 48.8188166
     },
     {
       "type_etablissement": "Centre Hospitalier (C.H.)",
@@ -1879,19 +1879,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "28 RUE DE CHARENTON",
       "code_postal": "75571",
-      "longitude": 2.3720208,
-      "latitude": 48.850335
+      "longitude": 2.372193,
+      "latitude": 48.8512676
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "39 AVENUE REPUBLIQUE",
       "code_postal": "75011",
-      "longitude": 2.3738011,
-      "latitude": 48.8655457
+      "longitude": 2.3743709,
+      "latitude": 48.8653523
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -1901,8 +1901,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "114 AVENUE DE FLANDRE",
       "code_postal": "75019",
-      "longitude": 2.3788349,
-      "latitude": 48.8919582
+      "longitude": 2.3786238,
+      "latitude": 48.8919202
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1912,8 +1912,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "114 AVENUE DE FLANDRE",
       "code_postal": "75019",
-      "longitude": 2.3788349,
-      "latitude": 48.8919582
+      "longitude": 2.3786238,
+      "latitude": 48.8919202
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -1923,8 +1923,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "10 RUE DU GENERAL LASSALLE",
       "code_postal": "75019",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.3818222,
+      "latitude": 48.88235
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -1934,8 +1934,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "55 RUE DE LA FOLIE-REGNAULT",
       "code_postal": "75011",
-      "longitude": 2.3859993,
-      "latitude": 48.8607065
+      "longitude": 2.3859547,
+      "latitude": 48.8607763
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -1945,8 +1945,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "18 RUE GOUBET",
       "code_postal": "75019",
-      "longitude": 2.3901059,
-      "latitude": 48.8858235
+      "longitude": 2.3901062,
+      "latitude": 48.8858515
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -1956,8 +1956,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "10 RUE DE LA SOLIDARITE",
       "code_postal": "75019",
-      "longitude": 2.3913213,
-      "latitude": 48.8836845
+      "longitude": 2.3914379,
+      "latitude": 48.8837441
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -1967,8 +1967,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "48 BOULEVARD SERRURIER",
       "code_postal": "75019",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.4019646,
+      "latitude": 48.8787193
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -1978,8 +1978,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "14 RUE DES TOURELLES",
       "code_postal": "75020",
-      "longitude": 2.4040988,
-      "latitude": 48.8746108
+      "longitude": 2.4047613,
+      "latitude": 48.874762
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -1989,30 +1989,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "62 RUE DE LA TOUR",
       "code_postal": "75116",
-      "longitude": 2.2809337,
-      "latitude": 48.8603619
+      "longitude": 2.2809349,
+      "latitude": 48.8602135
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "137 RUE DE LA CONVENTION",
       "code_postal": "75015",
-      "longitude": 2.2907069,
-      "latitude": 48.8399371
+      "longitude": 2.2906453,
+      "latitude": 48.8398738
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "23 RUE GEORGES BIZET",
       "code_postal": "75016",
-      "longitude": 2.2969216,
-      "latitude": 48.8676295
+      "longitude": 2.2968021,
+      "latitude": 48.8676646
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2022,8 +2022,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "14 RUE MATHURIN REGNIER",
       "code_postal": "75015",
-      "longitude": 2.3072271,
-      "latitude": 48.8403309
+      "longitude": 2.30717,
+      "latitude": 48.8404815
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -2033,19 +2033,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "164 RUE DE GRENELLE",
       "code_postal": "75007",
-      "longitude": 2.3089956,
-      "latitude": 48.8580602
+      "longitude": 2.3089662,
+      "latitude": 48.8580522
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "9 RUE DE TURIN",
       "code_postal": "75008",
-      "longitude": 2.3249947,
-      "latitude": 48.8801289
+      "longitude": 2.3250706,
+      "latitude": 48.8801161
     },
     {
       "type_etablissement": "Etablissement Réadaptation Fonctionnelle",
@@ -2055,8 +2055,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "9 RUE MÉCHAIN",
       "code_postal": "75014",
-      "longitude": 2.3402482,
-      "latitude": 48.8355583
+      "longitude": 2.3400545,
+      "latitude": 48.8356021
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -2066,8 +2066,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "1 RUE CABANIS",
       "code_postal": "75674",
-      "longitude": 2.3390755,
-      "latitude": 48.8283176
+      "longitude": 2.3412612,
+      "latitude": 48.8302646
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -2077,19 +2077,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "1 PLACE DU PARVIS NOTRE-DAME",
       "code_postal": "75181",
-      "longitude": 2.5853472,
-      "latitude": 49.2068278
+      "longitude": 2.3489153,
+      "latitude": 48.8535813
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "20 RUE BELLIER-DEDOUVRE",
       "code_postal": "75013",
-      "longitude": 2.3507603,
-      "latitude": 48.8250579
+      "longitude": 2.3506495,
+      "latitude": 48.824971
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -2099,8 +2099,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "4 BOULEVARD AUGUSTE BLANQUI",
       "code_postal": "75013",
-      "longitude": 2.3539212,
-      "latitude": 48.8312437
+      "longitude": 2.35407,
+      "latitude": 48.8311205
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -2110,8 +2110,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "59 RUE GEOFFROY SAINT HILAIRE",
       "code_postal": "75005",
-      "longitude": 2.3549858,
-      "latitude": 48.843509
+      "longitude": 2.3549532,
+      "latitude": 48.8435919
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2121,19 +2121,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "11 RUE ALBERT BAYET",
       "code_postal": "75013",
-      "longitude": 2.3587837,
-      "latitude": 48.8304913
+      "longitude": 2.358838,
+      "latitude": 48.8305604
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "11 RUE PONS CARME",
       "code_postal": "75013",
-      "longitude": null,
-      "latitude": null
+      "longitude": 2.3676796,
+      "latitude": 48.8265034
     },
     {
       "type_etablissement": "Centre Postcure Malades Mentaux",
@@ -2143,8 +2143,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "6 RUE TROLLEY DE PREVAUX",
       "code_postal": "75013",
-      "longitude": 2.372825,
-      "latitude": 48.8261804
+      "longitude": 2.3731388,
+      "latitude": 48.8262592
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -2154,8 +2154,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "14 RUE DE THIONVILLE",
       "code_postal": "75019",
-      "longitude": 2.382063,
-      "latitude": 48.8884867
+      "longitude": 2.3822703,
+      "latitude": 48.8885843
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2165,8 +2165,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "197 RUE OBERKAMPF",
       "code_postal": "75011",
-      "longitude": 2.3726602,
-      "latitude": 48.8646838
+      "longitude": 2.3828579,
+      "latitude": 48.8670173
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2176,19 +2176,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5 IMPASSE DU BON SECOURS",
       "code_postal": "75543",
-      "longitude": -2.063771,
-      "latitude": 48.1721694
+      "longitude": 2.3833511,
+      "latitude": 48.854938
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "3 RUE OMER TALON",
       "code_postal": "75011",
-      "longitude": 2.3832495,
-      "latitude": 48.861309
+      "longitude": 2.3834354,
+      "latitude": 48.8613915
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -2198,8 +2198,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "12 RUE DU SERGENT BAUCHAT",
       "code_postal": "75571",
-      "longitude": 2.3915103,
-      "latitude": 48.8447421
+      "longitude": 2.3916175,
+      "latitude": 48.8448201
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -2209,8 +2209,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "129 RUE D'AVRON",
       "code_postal": "75020",
-      "longitude": 2.4089188,
-      "latitude": 48.8532832
+      "longitude": 2.4091872,
+      "latitude": 48.8532632
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -2220,19 +2220,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "29 RUE VIALA",
       "code_postal": "75015",
-      "longitude": 2.2894929,
-      "latitude": 48.8500993
+      "longitude": 2.289451,
+      "latitude": 48.8500712
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "166 RUE DE L'UNIVERSITE",
       "code_postal": "75007",
-      "longitude": 2.3057481,
-      "latitude": 48.8612095
+      "longitude": 2.3055112,
+      "latitude": 48.8611632
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2242,8 +2242,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "3 RUE DE LISBONNE",
       "code_postal": "75008",
-      "longitude": 2.317352,
-      "latitude": 48.877364
+      "longitude": 2.3175378,
+      "latitude": 48.8777165
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
@@ -2253,19 +2253,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "28 RUE POUCHET",
       "code_postal": "75017",
-      "longitude": 2.3197218,
-      "latitude": 48.8929818
+      "longitude": 2.3196396,
+      "latitude": 48.8929775
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "39 RUE VARENNE",
       "code_postal": "75007",
-      "longitude": 2.323113,
-      "latitude": 48.8541292
+      "longitude": 2.3231585,
+      "latitude": 48.8541419
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -2275,8 +2275,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "31B RUE DE LIEGE",
       "code_postal": "75008",
-      "longitude": 2.3259026,
-      "latitude": 48.8793879
+      "longitude": 2.3260074,
+      "latitude": 48.8794624
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -2286,8 +2286,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "42 BOULEVARD JOURDAN",
       "code_postal": "75674",
-      "longitude": 2.3326471,
-      "latitude": 48.8218428
+      "longitude": 2.3325274,
+      "latitude": 48.8218125
     },
     {
       "type_etablissement": "Etablissement de Soins Chirurgicaux",
@@ -2297,30 +2297,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "95 BOULEVARD ARAGO",
       "code_postal": "75014",
-      "longitude": 2.3346872,
-      "latitude": 48.8343253
+      "longitude": 2.3347228,
+      "latitude": 48.8344938
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "1 PLACE DU PARVIS NOTRE DAME",
       "code_postal": "75004",
-      "longitude": 2.5853472,
-      "latitude": 49.2068278
+      "longitude": 2.348489,
+      "latitude": 48.854402
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "20 RUE BELLIER-DEDOUVRE",
       "code_postal": "75013",
-      "longitude": 2.3507603,
-      "latitude": 48.8250579
+      "longitude": 2.3506495,
+      "latitude": 48.824971
     },
     {
       "type_etablissement": "Centre Hospitalier Régional (C.H.R.)",
@@ -2330,8 +2330,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "47 BOULEVARD DE L'HOPITAL",
       "code_postal": "75013",
-      "longitude": 2.3643143,
-      "latitude": 48.8354085
+      "longitude": 2.3608109,
+      "latitude": 48.8386062
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -2341,8 +2341,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "7 RUE DU BUISSON SAINT-LOUIS",
       "code_postal": "75010",
-      "longitude": 2.373621,
-      "latitude": 48.8724284
+      "longitude": 2.3728644,
+      "latitude": 48.8720625
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2352,8 +2352,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "6 RUE DE L'ASILE POPINCOURT",
       "code_postal": "75011",
-      "longitude": 2.3741193,
-      "latitude": 48.8596921
+      "longitude": 2.3741563,
+      "latitude": 48.8596911
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -2363,8 +2363,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "3 CITE D'ANGOULEME",
       "code_postal": "75011",
-      "longitude": 2.3747242,
-      "latitude": 48.8666804
+      "longitude": 2.3747399,
+      "latitude": 48.8666778
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2374,30 +2374,30 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "63 RUE DE LA ROQUETTE",
       "code_postal": "75011",
-      "longitude": 2.3761714,
-      "latitude": 48.8562351
+      "longitude": 2.3752069,
+      "latitude": 48.8558373
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "13 RUE PASTEUR",
       "code_postal": "75011",
-      "longitude": 2.3624751,
-      "latitude": 48.8154425
+      "longitude": 2.3756075,
+      "latitude": 48.8623164
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "8 RUE DE LA FOLIE-REGNAULT",
       "code_postal": "75011",
-      "longitude": 2.3859443,
-      "latitude": 48.8572118
+      "longitude": 2.3867825,
+      "latitude": 48.860619
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -2407,8 +2407,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "32 AVENUE DARIUS MILHAUD",
       "code_postal": "75019",
-      "longitude": 5.457304,
-      "latitude": 43.5330801
+      "longitude": 2.3885101,
+      "latitude": 48.8842154
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2418,8 +2418,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "56 RUE ABBE GROULT",
       "code_postal": "75015",
-      "longitude": 2.296294,
-      "latitude": 48.839798
+      "longitude": 2.2962997,
+      "latitude": 48.8397978
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -2429,8 +2429,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "178 RUE DE VAUGIRARD",
       "code_postal": "75015",
-      "longitude": 2.3096869,
-      "latitude": 48.8427081
+      "longitude": 2.3102443,
+      "latitude": 48.8422161
     },
     {
       "type_etablissement": "Etablissement Réadaptation Fonctionnelle",
@@ -2440,8 +2440,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "167 RUE RAYMOND LOSSERAND",
       "code_postal": "75014",
-      "longitude": 2.3132237,
-      "latitude": 48.8295506
+      "longitude": 2.3112489,
+      "latitude": 48.8303682
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
@@ -2451,8 +2451,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "3 RUE RIDDER",
       "code_postal": "75014",
-      "longitude": 2.3118311,
-      "latitude": 48.8311324
+      "longitude": 2.3118698,
+      "latitude": 48.8311258
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2462,19 +2462,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "18 RUE SALNEUVE",
       "code_postal": "75017",
-      "longitude": 2.3143626,
-      "latitude": 48.8854991
+      "longitude": 2.3143885,
+      "latitude": 48.8855503
     },
     {
       "type_etablissement": "Maison de Santé pour Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "41 RUE RAYMOND LOSSERAND",
       "code_postal": "75014",
-      "longitude": 2.3205589,
-      "latitude": 48.8351802
+      "longitude": 2.3206274,
+      "latitude": 48.8352237
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
@@ -2484,63 +2484,63 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "5 RUE CLAUZEL",
       "code_postal": "75009",
-      "longitude": 2.3393045,
-      "latitude": 48.878948
+      "longitude": 2.3391798,
+      "latitude": 48.8789746
     },
     {
       "type_etablissement": "Centre d'Accueil Thérapeutique à temps partiel (C.A.T.T.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "27 RUE DU FAUBOURG SAINT JACQUES",
       "code_postal": "75014",
-      "longitude": 2.3395041,
-      "latitude": 48.8360313
+      "longitude": 2.339631,
+      "latitude": 48.8387561
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "24 RUE DU FOSSÉ SAINT JACQUES",
       "code_postal": "75005",
-      "longitude": 4.3560966,
-      "latitude": 50.8498221
+      "longitude": 2.3447757,
+      "latitude": 48.8450983
     },
     {
       "type_etablissement": "Centre Hospitalier Spécialisé lutte Maladies Mentales",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "24 RUE D HAUTEVILLE",
       "code_postal": "75010",
-      "longitude": 2.3502591,
-      "latitude": 48.8726543
+      "longitude": 2.3501846,
+      "latitude": 48.8725059
     },
     {
       "type_etablissement": "Centre Crise Accueil Permanent",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "114 RUE DU TEMPLE",
       "code_postal": "75003",
-      "longitude": 2.3578953,
-      "latitude": 48.8628188
+      "longitude": 2.3580309,
+      "latitude": 48.8629998
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "28 RUE DE LA CHAPELLE",
       "code_postal": "75018",
-      "longitude": 2.3600094,
-      "latitude": 48.8922636
+      "longitude": 2.3599294,
+      "latitude": 48.892257
     },
     {
       "type_etablissement": "Etablissement Réadaptation Fonctionnelle",
@@ -2550,8 +2550,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "16 RUE DE L'AQUEDUC",
       "code_postal": "75010",
-      "longitude": 2.3601829,
-      "latitude": 48.8805036
+      "longitude": 2.3601462,
+      "latitude": 48.8805432
     },
     {
       "type_etablissement": "Etablissement de Convalescence et de Repos",
@@ -2561,19 +2561,19 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "39 RUE FESSART",
       "code_postal": "75019",
-      "longitude": 2.384614,
-      "latitude": 48.8767216
+      "longitude": 2.3846421,
+      "latitude": 48.8767242
     },
     {
       "type_etablissement": "Etablissement de Convalescence et de Repos",
-      "nom_etablissement": "Inconnu",
+      "nom_etablissement": "",
       "PAYS": "FRANCE",
       "VILLE": "PARIS",
       "DEPARTEMENT": "PARIS",
       "adresse_1": "74 RUE PETIT",
       "code_postal": "75019",
-      "longitude": 2.3879187,
-      "latitude": 48.8857339
+      "longitude": 2.3879473,
+      "latitude": 48.8857267
     },
     {
       "type_etablissement": "Etablissement de Convalescence et de Repos",
@@ -2583,8 +2583,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "78 RUE DE PICPUS",
       "code_postal": "75012",
-      "longitude": 2.3980131,
-      "latitude": 48.8417647
+      "longitude": 2.3981239,
+      "latitude": 48.8416869
     },
     {
       "type_etablissement": "Centre Médico-Psychologique (C.M.P.)",
@@ -2594,8 +2594,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "9 RUE DU TELEGRAPHE",
       "code_postal": "75020",
-      "longitude": 2.3997128,
-      "latitude": 48.8718166
+      "longitude": 2.3998439,
+      "latitude": 48.8717488
     },
     {
       "type_etablissement": "Etablissement de Soins Pluridisciplinaire",
@@ -2605,8 +2605,8 @@
       "DEPARTEMENT": "PARIS",
       "adresse_1": "125 RUE D'AVRON",
       "code_postal": "75020",
-      "longitude": 2.4086675,
-      "latitude": 48.8532382
+      "longitude": 2.4085778,
+      "latitude": 48.8531483
     }
   ]
 }

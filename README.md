@@ -1,129 +1,160 @@
-# Geotier Project 🌍
+# Geotier Middleware for Urban Data
 
-[![Python](https://img.shields.io/badge/python-3.10-blue)](#)
-[![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)](https://hub.docker.com/r/monregistry/projet_geotier)
+[![Geotier](https://img.shields.io/badge/Geotier-Paris-blue)](#)
+[![Python3.10](https://img.shields.io/badge/python-3.10%2B-blue)](#)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)](https://hub.docker.com/r/monregistry/projet_geotier)
 
-## Overview 📖
+---
 
-**Geotier** is a mapping service currently under development, focusing on various aspects of the city of Paris using multiple data sources:
+## Overview 📋
 
-- **Schools** (National Education API) 🏫
-- **Sports complexes** (Data.gouv.fr API) ⚽
-- **Metro stations** (Overpass API / OpenStreetMap) 🚇
-- **Hospitals** (Data.gouv.fr JSON file) 🏥
+Geotier is a middleware data pipeline focused on centralizing public data for the city of **Paris**. It extracts, formats, enriches, and stores data in a PostgreSQL database to allow simplified access and future analysis.
 
-The collected data is converted into DataFrames, enriched (with source and extraction date), and then inserted into a PostgreSQL database.
+Data sources include:
 
-We have different data sources, including flat files and APIs. The input flat files are stored in the `json` directory, and we use the `File_Reader` class to process them. Simply duplicate the method from this class to adapt it to the file format.
+- 🏫 **National Education API** for schools
+- ⚽ **Data.gouv APIs** for sports infrastructures
+- 🚇 **OpenStreetMap Overpass API** for metro stations
+- 🏥 **JSON data** for hospitals (offline file)
+
+The collected data is normalized, enriched with metadata (source and extraction date), and saved in a PostgreSQL database.
+
+---
 
 ## Architecture 🏗️
 
 ```plaintext
-┌───────────┐    API    ┌───────────┐    DF    ┌───────┐
-│ call_api  │ ───────▶ │ correction│ ───────▶ │ Data  │
-│ (Collect) │         │ (Processing)│         │ Work  │
-└───────────┘          └───────────┘         │ (Conversion,
-                                              │  Lineage)│
-                                              └───────┘
-                                                  │ BDD
-                                                  ▼
-                                              ┌────────┐
-                                              │  Bdd   │
-                                              │(Postgre│
-                                              │SQL insert)
-                                              └────────┘
+┌────────────┐    Collect    ┌────────────┐    Format    ┌────────────┐
+│ call_api.py│ ───────────> │ processing │ ───────────> │ convert_df │
+└────────────┘               └────────────┘              └────┬───────┘
+                                                              ▼
+                                                           PostgreSQL
+                                                           (bdd.py)
 ```
 
-## Components 🛠️
+---
 
-The project consists of **4** main modules:
+## Modules 📦
 
-- **call_api.py**: Responsible for collecting data from various sources.
-- **processing.py**: Formats the data into JSON, checks latitudes and longitudes using the `geopy` library, and stores a copy of the data in JSON format in the `json_prd` directory.
-- **convert_df.py**: Converts the data into DataFrames and manages data lineage.
-- **bdd.py**: Manages the connection to the database and populates it.
-- **main.py**: Coordinates the execution of the different modules.
+| File           | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| `call_api.py`  | Fetches data from external sources via API or local JSON                    |
+| `processing.py`| Normalizes the structure of data (standard field names, coordinates, etc.) |
+| `convert_df.py`| Converts cleaned data into Pandas DataFrames and adds metadata              |
+| `bdd.py`       | Inserts data into the PostgreSQL database and creates the required tables   |
+| `main.py`      | Orchestrates all modules; schedules and controls the entire workflow        |
 
-## Prerequisites ⚙️
+---
 
-- Docker (optional for containerization)
-- Python 3.10+
-- PostgreSQL database (accessible via environment variables)
+## Quickstart 🚀
 
-## Configuration ⚙️
+> ⚠️ This script is designed to run **only on Mondays** to simulate a weekly data refresh.
 
-At the root of the project, create a `.env` file:
+### 1. Setup your `.env` file 📁
 
-**For each new API, add a class in `call_api.py`. Simply duplicate the previous ones and make the necessary modifications according to the API.**
+At the root of the project, create a `.env` file with your environment variables:
 
-```dotenv
-# URLs of the APIs
+```env
+# API URLs
 ECOLE_API=https://data.education.gouv.fr/api/...
 SPORT_COMPLEXE_API=https://data.education.gouv.fr/api/...
-HOPITAUX_API=<path_to_JSON_file>
+HOPITAUX_API=./json/hospitals_paris.json
 RATP_API=http://overpass-api.de/api/interpreter
 
-# PostgreSQL
-DB_HOST=<database_address>
-DB_PORT=<connection_port>
-DB_NAME=<database_name>
-DB_USER=<username>
-DB_PASSWORD=<database_password>
+# PostgreSQL Connection
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=geotier
+DB_USER=postgres
+DB_PASSWORD=password
 ```
 
-## Installation 🛠️
+### 2. Run the pipeline ▶️
 
-### With Docker 🐳
+```bash
+python main.py
+```
+
+Or run each module manually if needed:
+
+```bash
+python call_api.py
+python processing.py
+python convert_df.py
+python bdd.py
+```
+
+### 3. Result 📈
+
+Your database is now populated with structured data for:
+
+- Schools (ecole)
+- Sports complexes (sport)
+- Hospitals (hopital)
+- Metro stations (metro)
+
+---
+
+## Docker Deployment 🐳
+
+Build and run the pipeline in Docker:
 
 ```bash
 docker build -t projet_geotier .
 docker run --env-file .env projet_geotier
 ```
 
-### Locally 💻
+Push to Docker Hub:
 
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-python app/main.py
-```
-
-## Usage 🚀
-
-The main script `app/main.py` automatically executes all steps:
-1. Data collection (call_api)
-2. Processing and formatting (processing)
-3. Conversion to DataFrame and enrichment (convert_df)
-4. Insertion into PostgreSQL (bdd)
-
-## Development 🧑‍💻
-
-To run each module individually:
-
-```bash
-# Collection
-python -m app.call_api
-# Processing
-python -m app.processing
-# Conversion
-python -m app.convert_df
-# Full execution
-python app/main.py
-```
-
-## Deployment 🚀
-
-- Build and push the Docker container to a private registry or Docker Hub.
-
-```bash
-docker build -t monregistry/projet_geotier:latest .
+docker tag projet_geotier monregistry/projet_geotier:latest
 docker push monregistry/projet_geotier:latest
 ```
 
-## Authors ✍️
+---
 
-- Idir GUETTAB
+## Dev Notes 📝
+
+### File Outputs
+- Intermediate JSONs are saved in `json_prd/`
+- All datasets are filtered to focus on Paris only (code postal 75)
+
+### Customization
+To add a new API:
+- Duplicate a method in `Call` class (in `call_api.py`)
+- Implement structure correction in `Correction_Structure`
+- Convert via `DataWork` and insert using `Bdd`
+
+---
+
+## Database Modifications & Extensions 🗄️
+
+To **modify the database schema** (e.g. add new columns or tables):
+
+1. Open `bdd.py`
+2. Locate the relevant `create_table_<type>()` method
+3. Modify the SQL `CREATE TABLE` query accordingly (e.g. add new fields)
+4. Restart the script to trigger table creation/update
+
+To **add a new insertion method**:
+
+1. Define a new method `insert_<type>()` inside `bdd.py`
+2. It should accept a pandas DataFrame (`data`) and loop over its rows to insert into the appropriate table
+
+To **add new logic for extraction or formatting**:
+- Implement your new API logic in `call_api.py`
+- Add a corresponding correction method in `processing.py`
+- Use `convert_df.py` to convert it
+- And finally insert it via `bdd.py`
+
+> 💡 You can copy/paste from the existing structure (e.g., `insert_ecole`) to avoid writing from scratch.
+
+---
+
+## Author ✍️
+
+- **Idir GUETTAB**
 
 
 

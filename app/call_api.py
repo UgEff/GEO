@@ -79,11 +79,10 @@ class Call:
         # Paramètres de la requête
         params = {
             "select": (
-                "inst_numero,inst_nom,inst_adresse,inst_cp,inst_com_code,inst_com_nom,new_code,new_name,"
-                "inst_actif,inst_etat,inst_date_creation,inst_date_etat,equip_type_code,equip_type_name,"
-                "equip_type_famille,coordonnees"
+                "inst_numero,inst_nom,inst_adresse,inst_cp,new_code,new_name,"
+                "equip_type_code,equip_type_name,equip_type_famille,coordonnees"
             ),
-            "where": "dep_code='75'",  # Correction ici
+            "where": "dep_code='75'",
             "refine": "inst_part_type_filter:Complexe sportif",
             "limit": 100,
             "offset": 0
@@ -155,7 +154,7 @@ class Call:
                             stations.append(station)
 
                     with open('json_prd/metro.json', 'w') as f:
-                        json.dump({"total_count": len(total_results), "results": total_results}, f)
+                        json.dump({"total_count": len(stations), "results": stations}, f)
 
                     print(f"Nombre total de stations trouvées : {len(stations)}")
                     return stations

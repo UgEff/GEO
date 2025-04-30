@@ -49,7 +49,7 @@ The collected data is normalized, enriched with metadata (source and extraction 
 
 ## Quickstart 🚀
 
-> ⚠️ This script is designed to run **only on Mondays** to simulate a weekly data refresh.
+> ⚠️ This script is designed to run **only on Mondays** to simulate a weekly data refresh. If you run the script on any other day, it will stop with a message indicating that execution is only allowed on Mondays. This is not a bug, it's an expected behavior.
 
 ### 1. Setup your `.env` file 📁
 
@@ -130,6 +130,10 @@ To add a new API:
 
 ## Database Modifications & Extensions 🗄️
 
+> 💡 All database tables include lineage fields:
+> - `source` : indicates the data source (API, JSON file, etc.)
+> - `date_extract` : data extraction date
+
 To **modify the database schema** (e.g. add new columns or tables):
 
 1. Open `bdd.py`
@@ -149,6 +153,18 @@ To **add new logic for extraction or formatting**:
 - And finally insert it via `bdd.py`
 
 > 💡 You can copy/paste from the existing structure (e.g., `insert_ecole`) to avoid writing from scratch.
+
+## Data Visualization 📊
+
+The project includes a Tableau file (`geotir_uat.twbx`) for data visualization. This file contains:
+- Visualizations for each data type (schools, sports complexes, hospitals, metro stations)
+- Interactive maps showing the location of establishments
+- Dashboards to analyze data by establishment type, district, etc.
+
+To use this file:
+1. Open it with Tableau Desktop
+2. Connect to your PostgreSQL database
+3. Visualizations will automatically update with the latest data
 
 ---
 
